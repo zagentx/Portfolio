@@ -14,27 +14,33 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#"
+          <a class="nav-link active text-light" aria-current="page" href="blog"
             >Blog</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">About</a>
+          <a class="nav-link text-light" href="about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light">Projekte</a>
+          <a class="nav-link text-light" href="projekte">Projekte</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light">Kontakt</a>
+          <a class="nav-link text-light" href="kontakt">Kontakt</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
         <input
+          *ngIf="toggleIcon"
           class="form-control me-2"
           type="search"
-          placeholder="Search"
+          placeholder="Suche"
           aria-label="Search" />
-        <button class="btn btn-outline-light" type="submit">Search</button>
+        <i
+          class="bi-search"
+          style="font-size: 1rem; color: white"
+          type="submit"
+          (click)="openInput()">
+        </i>
       </form>
     </div>
   </div>
