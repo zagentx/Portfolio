@@ -1,4 +1,4 @@
 {
-  "bracketSameLine": true,
-  "jsxBracketSameLine": true
+    "bracketSameLine": true,
+    "jsxBracketSameLine": true
 }

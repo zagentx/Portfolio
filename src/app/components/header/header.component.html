@@ -13,11 +13,7 @@
     <a class="navbar-brand text-light navbar-hover" href="#"><b>zAgentx</b></a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" routerLink="blog" >
-            Blog
-          </a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link text-light" routerLink="about" >About</a>
         </li>
@@ -28,20 +24,12 @@
           <a class="nav-link text-light" routerLink="kontakt">Kontakt</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
+      <div class="d-flex">
         <input
           *ngIf="toggleIcon"
           class="form-control me-2"
-          type="search"
-          placeholder="Suche"
-          aria-label="Search" />
-        <i
-          class="bi-search"
-          style="font-size: 1rem; color: white"
-          type="submit"
-          (click)="openInput()">
-        </i>
-      </form>
+        />
+      </div>
     </div>
   </div>
 </nav>
