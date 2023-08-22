@@ -11,26 +11,28 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgOptimizedImage } from "@angular/common";
+import { NgOptimizedImage } from '@angular/common';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        BlogComponent,
-        AboutComponent,
-        ProjectsComponent,
-        HeaderComponent,
-        FooterComponent,
-        SidebarComponent,
-        ContactComponent,
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FontAwesomeModule,
-        NgOptimizedImage,
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
+  declarations: [
+    AppComponent,
+    BlogComponent,
+    AboutComponent,
+    ProjectsComponent,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    ContactComponent,
+    HomeComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    NgOptimizedImage,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
