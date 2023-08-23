@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  toggleIcon = false;
+  toggleMenu = false;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  public openInput() {
-    this.toggleIcon = true;
+  public openMenu() {
+    this.toggleMenu = true;
   }
 }

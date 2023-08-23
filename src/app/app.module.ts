@@ -11,6 +11,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     FontAwesomeModule,
     NgOptimizedImage,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
