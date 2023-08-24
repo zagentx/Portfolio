@@ -8,4 +8,15 @@
 
 #brand {
   font-weight: bold;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+#menuItems {
+  color: whitesmoke;
 }

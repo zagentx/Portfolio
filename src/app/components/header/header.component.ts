@@ -7,13 +7,11 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  toggleMenu = false;
+  isMenuCollapsed = true;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  public openMenu() {
-    this.toggleMenu = true;
-  }
+  public openMenu() {}
 }
