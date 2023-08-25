@@ -12,6 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ImpressumComponent } from './pages/impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SidebarComponent,
     ContactComponent,
     HomeComponent,
+    ImpressumComponent,
   ],
   imports: [
     BrowserModule,

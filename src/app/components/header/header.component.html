@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-gradient mb-3">
   <div class="container-fluid">
     <a class="navbar-brand" id="brand" routerLink="home">zAgentx</a>
-    <button
-      class="navbar-toggler"
-      type="button"
+    <span
+      class="bi bi-list"
+      id="menuIcon"
+      style="font-size: 1.5rem; color: whitesmoke"
       (click)="isMenuCollapsed = !isMenuCollapsed">
-      &#9776;
-    </button>
+    </span>
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item active">
@@ -30,8 +30,8 @@
             class="nav-link text-light"
             routerLink="about"
             (click)="isMenuCollapsed = true"
-            >About</a
-          >
+            >About
+          </a>
         </li>
         <li class="nav-item">
           <a

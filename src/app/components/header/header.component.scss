@@ -8,11 +8,17 @@
 
 #brand {
   font-weight: bold;
-  color: whitesmoke;
+  color: orange;
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
+    background-color: #23272e;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #menuIcon {
     display: none;
   }
 }
