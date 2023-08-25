@@ -13,6 +13,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
+import { ShoppingListComponent } from './components/projects/shopping-list/shopping-list.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ImpressumComponent } from './pages/impressum/impressum.component';
     ContactComponent,
     HomeComponent,
     ImpressumComponent,
+    ShoppingListComponent,
   ],
   imports: [
     BrowserModule,
