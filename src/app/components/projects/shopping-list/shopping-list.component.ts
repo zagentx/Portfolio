@@ -26,7 +26,14 @@ export class ShoppingListComponent implements OnInit {
     }
   }
 
-  removeItem(index: number) {
+  editItem(index: number) {
+    const item = this.items[index];
+    this.newItemName = item.name;
+    this.newItemQuantity = item.quantity;
+    this.deleteItem(index);
+  }
+
+  deleteItem(index: number) {
     this.items.splice(index, 1);
   }
 }

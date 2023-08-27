@@ -4,10 +4,10 @@
       <h3 class="card-title fw-light py-3">Einkaufsliste erstellen</h3>
       <div class="row">
         <div class="col-5">
-          <label class="py-2">Artikel</label>
+          <label class="py-2"><b>Artikel</b></label>
         </div>
         <div class="col-4">
-          <label class="py-2">Menge</label>
+          <label class="py-2"><b>Menge</b></label>
         </div>
       </div>
       <div class="row py-3">
@@ -18,7 +18,7 @@
           <input [(ngModel)]="newItemQuantity" type="text" class="item" />
         </div>
         <div class="col">
-          <i class="bi bi-plus-square-dotted" (click)="addItem()"></i>
+          <i class="bi bi-plus-square" (click)="addItem()"></i>
         </div>
       </div>
     </div>
@@ -28,25 +28,37 @@
       <h3 class="card-title fw-light py-3">Einkaufsliste</h3>
       <div class="row">
         <div class="col-5">
-          <label class="py-2">Artikel</label>
+          <label class="py-2"><b>Artikel</b></label>
         </div>
         <div class="col-4">
-          <label class="py-2">Menge</label>
+          <label class="py-2"><b>Menge</b></label>
         </div>
+      </div>
+      <div class="row justify-content-center">
+        <hr />
       </div>
       <div class="row">
         <div class="col-5">
           <ul>
-            <li *ngFor="let item of items">{{ item.name }}</li>
+            <li *ngFor="let item of items">
+              {{ item.name }}
+            </li>
           </ul>
         </div>
         <div class="col-4">
           <ul>
-            <li *ngFor="let item of items">{{ item.quantity }}</li>
+            <li *ngFor="let item of items">
+              {{ item.quantity }}
+            </li>
           </ul>
         </div>
         <div class="col">
-          <i class="bi bi-trash" (click)="removeItem(index)"></i>
+          <ul>
+            <li>
+              <i class="bi bi-pencil px-3" (click)="editItem(index)"></i>
+              <i class="bi bi-trash" (click)="deleteItem(index)"></i>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="row justify-content-center">
