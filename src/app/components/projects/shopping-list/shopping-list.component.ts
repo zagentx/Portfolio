@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-list.component.scss'],
 })
 export class ShoppingListComponent implements OnInit {
-  items = [{ name: '', quantity: 0 }];
+  items = [{ name: '', quantity: null }];
   newItemName = '';
-  newItemQuantity = 0;
+  newItemQuantity = null;
+  index = 0;
+
+  constructor() {}
+
+  ngOnInit(): void {}
 
   addItem() {
     if (this.newItemName && this.newItemQuantity) {
@@ -17,14 +22,11 @@ export class ShoppingListComponent implements OnInit {
         quantity: this.newItemQuantity,
       });
       this.newItemName = '';
-      this.newItemQuantity = 0;
+      this.newItemQuantity = null;
     }
   }
 
   removeItem(index: number) {
     this.items.splice(index, 1);
   }
-  constructor() {}
-
-  ngOnInit(): void {}
 }

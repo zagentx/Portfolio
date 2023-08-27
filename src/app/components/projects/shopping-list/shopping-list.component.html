@@ -10,7 +10,7 @@
           <label class="py-2">Menge</label>
         </div>
       </div>
-      <div class="row">
+      <div class="row py-3">
         <div class="col-5">
           <input [(ngModel)]="newItemName" type="text" class="item" />
         </div>
@@ -33,21 +33,25 @@
         <div class="col-4">
           <label class="py-2">Menge</label>
         </div>
-        <div class="row">
-          <div class="col-5">
-            <ul>
-              <li *ngFor="let item of items">{{ item.name }}</li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <ul>
-              <li *ngFor="let item of items">{{ item.quantity }}</li>
-            </ul>
-          </div>
-          <div class="col"><i class="bi bi-trash" (click)="removeItem(1)"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <ul>
+            <li *ngFor="let item of items">{{ item.name }}</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <li *ngFor="let item of items">{{ item.quantity }}</li>
+          </ul>
+        </div>
+        <div class="col">
+          <i class="bi bi-trash" (click)="removeItem(index)"></i>
         </div>
       </div>
-      <hr />
+      <div class="row justify-content-center">
+        <hr />
+      </div>
       <div class="row pb-1 text-center">
         <div class="col">
           <i class="bi bi-download"></i>
