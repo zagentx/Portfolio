@@ -2,21 +2,23 @@
   <div class="card">
     <div class="card-body">
       <h3 class="card-title fw-light py-3">Einkaufsliste erstellen</h3>
-      <div class="row justify-content-start">
-        <div class="col-md-4">
+      <div class="row">
+        <div class="col-5">
           <label class="py-2">Artikel</label>
         </div>
-        <div class="col">
+        <div class="col-4">
           <label class="py-2">Menge</label>
         </div>
-        <div class="row">
-          <div class="col">
-            <input [(ngModel)]="newItemName" type="text" class="item" />
-          </div>
-          <div class="col" id="amount"><input [(ngModel)]="newItemQuantity" type="text" class="item" /></div>
-          <div class="col">
-            <i class="bi bi-plus-square-dotted" (click)="addItem()"></i>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <input [(ngModel)]="newItemName" type="text" class="item" />
+        </div>
+        <div class="col-4">
+          <input [(ngModel)]="newItemQuantity" type="text" class="item" />
+        </div>
+        <div class="col">
+          <i class="bi bi-plus-square-dotted" (click)="addItem()"></i>
         </div>
       </div>
     </div>
@@ -25,31 +27,31 @@
     <div class="card-body">
       <h3 class="card-title fw-light py-3">Einkaufsliste</h3>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-5">
           <label class="py-2">Artikel</label>
         </div>
-        <div class="col">
+        <div class="col-4">
           <label class="py-2">Menge</label>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-5">
             <ul>
               <li *ngFor="let item of items">{{ item.name }}</li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-4">
             <ul>
               <li *ngFor="let item of items">{{ item.quantity }}</li>
             </ul>
           </div>
-          <div class="col"><i class="bi bi-trash"></i></div>
-          <hr />
-          <div class="row pb-1 text-center">
-            <div class="col">
-              <i class="bi bi-download"></i>
-              <i class="bi bi-share px-3"></i>
-            </div>
-          </div>
+          <div class="col"><i class="bi bi-trash" (click)="removeItem(1)"></i></div>
+        </div>
+      </div>
+      <hr />
+      <div class="row pb-1 text-center">
+        <div class="col">
+          <i class="bi bi-download"></i>
+          <i class="bi bi-share px-3"></i>
         </div>
       </div>
     </div>

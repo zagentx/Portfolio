@@ -20,6 +20,10 @@ export class ShoppingListComponent implements OnInit {
       this.newItemQuantity = 0;
     }
   }
+
+  removeItem(index: number) {
+    this.items.splice(index, 1);
+  }
   constructor() {}
 
   ngOnInit(): void {}
