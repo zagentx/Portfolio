@@ -1,7 +1,10 @@
 <h1>Einkaufsliste</h1>
-<input [(ngModel)]="newItemName" placeholder="Name" />
-<input [(ngModel)]="newItemQuantity" placeholder="Menge" type="number" />
-<button (click)="addItem()">Hinzufügen</button>
+<div class="row">
+  <input [(ngModel)]="newItemName" placeholder="Name" />
+  <input [(ngModel)]="newItemQuantity" placeholder="Menge" type="number" />
+  <i class="bi bi-plus-square" style="font-size: 1.9rem; color: yellowgreen" (click)="addItem()"></i>
+</div>
+
 <ul>
   <li *ngFor="let item of items; let i = index">
     {{ item.name }} ({{ item.quantity }})

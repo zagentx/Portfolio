@@ -1,45 +1,49 @@
 <div class="container">
-
   <div class="card">
     <div class="card-body">
-      <h3 class="card-title fw-light py-3">Einkaufsliste erstellen</h3>
+      <h3 class="card-title fw-light py-3"><b>Einkaufsliste</b></h3>
       <div class="row">
         <div class="col-5">
-          <label class="py-2"><b>Artikel</b></label>
+          <label class="py-2">Artikel</label>
         </div>
         <div class="col-4">
-          <label class="py-2"><b>Menge</b></label>
+          <label class="py-2">Menge</label>
         </div>
       </div>
       <div class="row py-3">
         <div class="col-5">
-          <input [(ngModel)]="newItemName" type="text" class="item" required />
+          <input
+            [(ngModel)]="newItemName"
+            type="text"
+            class="item-input"
+            placeholder="" />
         </div>
         <div class="col-4">
-          <input [(ngModel)]="newItemQuantity" type="number" class="amount" required />
+          <input
+            [(ngModel)]="newItemQuantity"
+            type="number"
+            class="amount-input"
+            placeholder="" />
+          <i
+            class="bi bi-plus-square px-3 py-3"
+            style="font-size: 1.3rem; color: yellowgreen"
+            (click)="addItem()"></i>
         </div>
-        <div class="col">
-          <i class="bi bi-plus-square" style="color: grey" (click)="addItem()"></i>
-        </div>
+<!--        <div class="col">-->
+<!--          <i-->
+<!--            class="bi bi-plus-square"-->
+<!--            style="font-size: 1.3rem; color: yellowgreen"-->
+<!--            (click)="addItem()"></i>-->
+<!--        </div>-->
       </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-      <h3 class="card-title fw-light py-3"> Deine Einkaufsliste</h3>
-      <div class="row">
-        <div class="col-5">
-          <label class="py-2"><b>Artikel</b></label>
-        </div>
-        <div class="col-4">
-          <label class="py-2"><b>Menge</b></label>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <hr />
-      </div>
+<!--      <div class="row">-->
+<!--        <div class="col-5">-->
+<!--          <label class="py-2"><b>Artikel</b></label>-->
+<!--        </div>-->
+<!--        <div class="col-4">-->
+<!--          <label class="py-2"><b>Menge</b></label>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <div class="row">
         <div class="col-5">
@@ -61,24 +65,30 @@
         <div class="col" *ngIf="items.length > 0">
           <ul>
             <li *ngFor="let item of items; let i = index">
-              <i class="bi bi-pencil" style="color: dodgerblue" (click)="editItem(i)"></i>
-              <i class="bi bi-trash px-3" style="color: red" (click)="deleteItem(i)"></i>
+              <i
+                class="bi bi-pencil"
+                style="font-size: 1.3rem; color: dodgerblue"
+                (click)="editItem(i)"></i>
+              <i
+                class="bi bi-trash px-3"
+                style="font-size: 1.3rem; color: red"
+                (click)="deleteItem(i)"></i>
             </li>
           </ul>
         </div>
 
-              <div class="row justify-content-center">
-        <hr />
-      </div>
+        <div>
+          <hr />
+        </div>
 
-      <div class="row pb-1 text-center">
-        <div class="col">
-          <i class="bi bi-download"></i>
-          <i class="bi bi-share px-3"></i>
+        <div class="row pb-1 text-center">
+          <div class="col">
+            <i class="bi bi-download"></i>
+            <i class="bi bi-share px-3"></i>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<app-playground></app-playground>
+  <!--<app-playground></app-playground>-->
 </div>
