@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { ShoppingListComponent } from './components/projects/shopping-list/shopping-list.component';
 import { FormsModule } from '@angular/forms';
+import { PlaygroundComponent } from './components/projects/playground/playground.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ImpressumComponent,
     ShoppingListComponent,
+    PlaygroundComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 interface Item {
   name: string;
   quantity: number;
 }
 @Component({
-  selector: 'app-shopping-list',
-  templateUrl: './shopping-list.component.html',
-  styleUrls: ['./shopping-list.component.scss'],
+  selector: 'app-playground',
+  templateUrl: './playground.component.html',
+  styleUrls: ['./playground.component.scss'],
 })
-export class ShoppingListComponent implements OnInit {
-  items: Item[] = [];
+export class PlaygroundComponent {
+  items: Item[] = [
+    { name: 'Äpfel', quantity: 5 },
+    { name: 'Bananen', quantity: 3 },
+  ];
   newItemName = '';
-  newItemQuantity: any;
-
-  constructor() {}
-
-  ngOnInit(): void {}
+  newItemQuantity = 1;
 
   addItem() {
     this.items.push({
@@ -23,7 +22,7 @@ export class ShoppingListComponent implements OnInit {
       quantity: this.newItemQuantity,
     });
     this.newItemName = '';
-    this.newItemQuantity = null;
+    this.newItemQuantity = 1;
   }
 
   editItem(index: number) {
