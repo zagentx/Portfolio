@@ -8,4 +8,21 @@
 
 #brand {
   font-weight: bold;
+  color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #23272e;
+  }
+}
+
+@media only screen and (min-width: 913px) {
+  #menuIcon {
+    display: none;
+  }
+}
+
+#menuItems {
+  color: whitesmoke;
 }
