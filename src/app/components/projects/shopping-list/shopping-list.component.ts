@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
 interface Item {
   name: string;
   quantity: number;
 }
+
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
@@ -12,6 +14,8 @@ export class ShoppingListComponent implements OnInit {
   items: Item[] = [];
   newItemName = '';
   newItemQuantity: any;
+
+  editMode = false;
 
   constructor() {}
 
