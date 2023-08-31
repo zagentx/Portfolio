@@ -6,9 +6,13 @@
   width: 100%;
 }
 
-#brand {
+.navbar-brand {
   font-weight: bold;
   color: orange;
+}
+
+.nav-link:hover {
+  color: orange !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -21,8 +25,4 @@
   #menuIcon {
     display: none;
   }
-}
-
-#menuItems {
-  color: whitesmoke;
 }

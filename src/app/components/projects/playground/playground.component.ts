@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
-interface Item {
-  name: string;
-  quantity: number;
-}
+
 @Component({
   selector: 'app-playground',
   templateUrl: './playground.component.html',
   styleUrls: ['./playground.component.scss'],
 })
 export class PlaygroundComponent {
-  items: Item[] = [
-    { name: 'Äpfel', quantity: 5 },
-    { name: 'Bananen', quantity: 3 },
-  ];
+  title = 'Shopping List';
+  items = [{ name: '', quantity: null }];
   newItemName = '';
-  newItemQuantity = 1;
+  newItemQuantity = null;
 
   addItem() {
     this.items.push({
@@ -22,17 +17,22 @@ export class PlaygroundComponent {
       quantity: this.newItemQuantity,
     });
     this.newItemName = '';
-    this.newItemQuantity = 1;
-  }
-
-  editItem(index: number) {
-    const item = this.items[index];
-    this.newItemName = item.name;
-    this.newItemQuantity = item.quantity;
-    this.deleteItem(index);
+    this.newItemQuantity = null;
   }
 
   deleteItem(index: number) {
     this.items.splice(index, 1);
+  }
+
+  editItem(index: number) {
+    const item = this.items[index];
+    if (this.items.some((i) => i.name === item.name)) {
+      throw new Error(
+        `Item with name ${item.name} already exists in the list.`,
+      );
+    }
+    this.newItemName = item.name;
+    this.newItemQuantity = item.quantity;
+    this.deleteItem(index);
   }
 }

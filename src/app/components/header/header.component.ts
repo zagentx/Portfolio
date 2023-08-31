@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +11,4 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  public openMenu() {}
 }

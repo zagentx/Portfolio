@@ -11,6 +11,15 @@
   }
 }
 
+//#link {
+//  text-decoration: none;
+//}
+//
+//#link:hover {
+//  color: orange !important;
+//  text-decoration: none;
+//}
+
 a {
   color: #6c757d;
   text-decoration: none;
@@ -19,4 +28,10 @@ a {
 
 a:hover {
   color: orange;
+}
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+  color: #6c757d;
 }
