@@ -4,8 +4,15 @@
   margin-top: 50px;
 }
 
-#brand {
+b {
   color: orange;
 }
 
+a {
+  text-decoration: none;
+}
 
+a:hover {
+  color: orange !important;
+  animation-name: glyph;
+}

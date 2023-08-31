@@ -16,6 +16,7 @@ import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { ShoppingListComponent } from './components/projects/shopping-list/shopping-list.component';
 import { FormsModule } from '@angular/forms';
 import { PlaygroundComponent } from './components/projects/playground/playground.component';
+import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { PlaygroundComponent } from './components/projects/playground/playground
     ImpressumComponent,
     ShoppingListComponent,
     PlaygroundComponent,
+    DatenschutzComponent,
   ],
   imports: [
     BrowserModule,
