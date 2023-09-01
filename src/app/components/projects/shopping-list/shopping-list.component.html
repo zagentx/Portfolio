@@ -18,7 +18,8 @@
         <div class="col-2">
           <input
             [(ngModel)]="newItemQuantity"
-            type="number" min="1"
+            type="number"
+            min="0"
             class="amount-input" />
         </div>
         <div class="col-2">
@@ -45,10 +46,16 @@
             <li
               *ngFor="let item of items; let i = index"
               style="font-size: 1.2rem">
-              {{ item.quantity }}
+              {{ item.quantity > 0 ? item.quantity : "" }}
             </li>
           </ul>
         </div>
+
+<!--        <ng-container *ngFor="let item of items">-->
+<!--          <li style="font-size: 1.2rem">-->
+<!--            {{ item.quantity > 0 ? item.quantity : "" }}-->
+<!--          </li>-->
+<!--        </ng-container>-->
 
         <div class="col-2" *ngIf="items.length">
           <ul>
