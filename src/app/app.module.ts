@@ -13,11 +13,9 @@ import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
-import { ShoppingListComponent } from './components/projects/shopping-list/shopping-list.component';
 import { FormsModule } from '@angular/forms';
-import { PlaygroundComponent } from './components/projects/playground/playground.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
-import { LocalStorageServiceComponent } from './components/projects/shopping-list/local-storage-service/local-storage-service.component';
+import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
 
 @NgModule({
   declarations: [
@@ -30,10 +28,8 @@ import { LocalStorageServiceComponent } from './components/projects/shopping-lis
     ContactComponent,
     HomeComponent,
     ImpressumComponent,
-    ShoppingListComponent,
-    PlaygroundComponent,
     DatenschutzComponent,
-    LocalStorageServiceComponent,
+    ShoppingListComponent,
   ],
   imports: [
     BrowserModule,
