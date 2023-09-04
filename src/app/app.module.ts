@@ -16,6 +16,7 @@ import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { FormsModule } from '@angular/forms';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
+import { CanbanBoardComponent } from './projects/canban-board/canban-board.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ShoppingListComponent } from './projects/shopping-list/shopping-list.co
     ImpressumComponent,
     DatenschutzComponent,
     ShoppingListComponent,
+    CanbanBoardComponent,
   ],
   imports: [
     BrowserModule,

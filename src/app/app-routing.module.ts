@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
+import { CanbanBoardComponent } from './projects/canban-board/canban-board.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'impressum', component: ImpressumComponent },
   { path: 'datenschutz', component: DatenschutzComponent },
   { path: 'shopping-list', component: ShoppingListComponent },
+  { path: 'canban-board', component: CanbanBoardComponent },
 ];
 
 @NgModule({
