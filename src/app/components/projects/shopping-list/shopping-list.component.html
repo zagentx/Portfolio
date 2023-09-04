@@ -64,6 +64,7 @@
           <ul>
             <li *ngFor="let item of items; let i = index">
               <i
+                *ngIf="!editMode"
                 class="bi bi-pencil"
                 style="font-size: 1.2rem"
                 (click)="editItem(i)"></i>
