@@ -17,6 +17,7 @@ import { ShoppingListComponent } from './components/projects/shopping-list/shopp
 import { FormsModule } from '@angular/forms';
 import { PlaygroundComponent } from './components/projects/playground/playground.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
+import { LocalStorageServiceComponent } from './components/projects/shopping-list/local-storage-service/local-storage-service.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component'
     ShoppingListComponent,
     PlaygroundComponent,
     DatenschutzComponent,
+    LocalStorageServiceComponent,
   ],
   imports: [
     BrowserModule,

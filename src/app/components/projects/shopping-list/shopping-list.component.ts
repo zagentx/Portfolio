@@ -19,7 +19,21 @@ export class ShoppingListComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.loadItems();
+  }
+
+  loadItems() {
+    const items = localStorage.getItem('shoppingList');
+    if (items) {
+      this.items = JSON.parse(items);
+    }
+  }
+
+  saveItems() {
+    localStorage.setItem('shoppingList', JSON.stringify(this.items));
+    console.log(localStorage);
+  }
 
   addItem() {
     this.items.push({
@@ -28,6 +42,7 @@ export class ShoppingListComponent implements OnInit {
     });
     this.newItemName = '';
     this.newItemQuantity = null;
+    this.saveItems();
   }
 
   editItem(index: number) {
@@ -39,9 +54,11 @@ export class ShoppingListComponent implements OnInit {
 
   deleteItem(index: number) {
     this.items.splice(index, 1);
+    this.saveItems();
   }
 
   clearShoppingList() {
     this.items = [];
+    this.saveItems();
   }
 }
