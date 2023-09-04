@@ -18,7 +18,7 @@ ul {
   padding: 0;
 }
 
-.item-input {
+#item-input {
   width: 80%;
   border: 0;
   border-radius: 0;
@@ -28,7 +28,7 @@ ul {
   font-size: 1.2rem;
 }
 
-.amount-input {
+#amount-input {
   width: 65%;
   border: 0;
   border-radius: 0;
@@ -36,4 +36,14 @@ ul {
   background: #f9f9f9;
   border-bottom: 1px solid darkgrey;
   font-size: 1.2rem;
+}
+
+#item-output {
+  font-size: 1.2rem;
+  background: #f9f9f9;
+}
+
+#amount-output {
+  font-size: 1.2rem;
+  background: #f9f9f9;
 }
