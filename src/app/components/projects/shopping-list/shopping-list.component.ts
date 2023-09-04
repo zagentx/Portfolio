@@ -16,6 +16,7 @@ export class ShoppingListComponent implements OnInit {
   newItemQuantity: any;
 
   editMode = false;
+  editIndex: number | null = null;
 
   constructor() {}
 
@@ -32,32 +33,59 @@ export class ShoppingListComponent implements OnInit {
 
   saveItems() {
     localStorage.setItem('shoppingList', JSON.stringify(this.items));
-    console.log(localStorage);
   }
 
   addItem() {
-    this.items.push({
-      name: this.newItemName,
-      quantity: this.newItemQuantity,
-    });
+    if (this.editIndex !== null) {
+      this.items[this.editIndex] = {
+        name: this.newItemName,
+        quantity: this.newItemQuantity,
+      };
+      this.editIndex = null;
+    } else {
+      this.items.push({
+        name: this.newItemName,
+        quantity: this.newItemQuantity,
+      });
+    }
     this.newItemName = '';
     this.newItemQuantity = null;
     this.saveItems();
+    this.editMode = false;
   }
 
   editItem(index: number) {
-    const item = this.items[index];
-    this.newItemName = item.name;
-    this.newItemQuantity = item.quantity;
-    this.deleteItem(index);
+    if (this.editMode && index === this.editIndex) {
+      this.newItemName = '';
+      this.newItemQuantity = null;
+      this.editMode = false;
+      this.editIndex = null;
+    } else {
+      const item = this.items[index];
+      this.newItemName = item.name;
+      this.newItemQuantity = item.quantity;
+      this.editMode = true;
+      this.editIndex = index;
+    }
   }
 
   deleteItem(index: number) {
+    if (index === this.editIndex) {
+      this.newItemName = '';
+      this.newItemQuantity = null;
+      this.editMode = false;
+      this.editIndex = null;
+    }
     this.items.splice(index, 1);
     this.saveItems();
   }
 
   clearShoppingList() {
+    this.newItemName = '';
+    this.newItemQuantity = null;
+    this.editMode = false;
+    this.editIndex = null;
+
     this.items = [];
     this.saveItems();
   }
