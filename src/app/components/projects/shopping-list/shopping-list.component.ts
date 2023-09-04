@@ -40,4 +40,8 @@ export class ShoppingListComponent implements OnInit {
   deleteItem(index: number) {
     this.items.splice(index, 1);
   }
+
+  clearShoppingList() {
+    this.items = [];
+  }
 }

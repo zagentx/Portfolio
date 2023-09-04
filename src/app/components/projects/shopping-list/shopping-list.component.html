@@ -2,6 +2,7 @@
   <div class="card">
     <div class="card-body">
       <h3 class="card-title fw-light py-3"><b>Einkaufsliste</b></h3>
+
       <div class="row">
         <div class="col-5">
           <label class="py-2">Artikel:</label>
@@ -13,14 +14,19 @@
 
       <div class="row py-3">
         <div class="col-5">
-          <input [(ngModel)]="newItemName" type="text" class="item-input" />
+          <input
+            [(ngModel)]="newItemName"
+            type="text"
+            class="item-input"
+            (keyup.enter)="addItem()" />
         </div>
         <div class="col-2">
           <input
             [(ngModel)]="newItemQuantity"
             type="number"
             min="0"
-            class="amount-input" />
+            class="amount-input"
+            (keyup.enter)="addItem()" />
         </div>
         <div class="col-2">
           <i
@@ -30,6 +36,10 @@
             (click)="addItem()">
           </i>
         </div>
+      </div>
+
+      <div>
+        <hr />
       </div>
 
       <div class="row py-3">
@@ -46,16 +56,24 @@
             <li
               *ngFor="let item of items; let i = index"
               style="font-size: 1.2rem">
-              {{ item.quantity > 0 ? item.quantity : "" }}
+              {{ item.quantity > 0 ? item.quantity : "-" }}
             </li>
           </ul>
         </div>
 
-<!--        <ng-container *ngFor="let item of items">-->
-<!--          <li style="font-size: 1.2rem">-->
-<!--            {{ item.quantity > 0 ? item.quantity : "" }}-->
-<!--          </li>-->
-<!--        </ng-container>-->
+        <!--        <ng-container *ngFor="let item of items">-->
+        <!--          <li style="font-size: 1.2rem">-->
+        <!--            {{ item.quantity > 0 ? item.quantity : "" }}-->
+        <!--          </li>-->
+        <!--        </ng-container>-->
+
+        <!--        <ng-container *ngFor="let item of items;">-->
+        <!--          <div class="col-2">-->
+        <!--            <ul>-->
+        <!--              <li style="font-size: 1.2rem">{{ item.quantity > 0 ? item.quantity : '' }}</li>-->
+        <!--            </ul>-->
+        <!--          </div>-->
+        <!--        </ng-container>-->
 
         <div class="col-2" *ngIf="items.length">
           <ul>
@@ -77,12 +95,22 @@
         <hr />
       </div>
 
-      <div class="row pb-1 text-center">
-        <div class="col">
-          <i class="bi bi-download" style="font-size: 1.2rem"></i>
-          <i class="bi bi-share px-3" style="font-size: 1.2rem"></i>
+      <div class="row text-center">
+          <div class="col">
+            <i
+              class="bi bi-trash3 px-3"
+              style="font-size: 1.2rem"
+              (click)="clearShoppingList()"></i>
+            <i
+              class="bi bi-download"
+              id="download"
+              style="font-size: 1.2rem"></i>
+            <i
+              class="bi bi-share px-3"
+              id="share"
+              style="font-size: 1.2rem"></i>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
