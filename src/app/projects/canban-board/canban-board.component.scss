@@ -1,5 +1,5 @@
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin-top: 15%;
   margin-bottom: 10%;
   text-align: center;
@@ -18,9 +18,14 @@ h1 {
 .board {
   display: flex;
 }
+
 .column {
   flex: 1;
+  max-width: 298px;
   padding: 10px;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .card {
@@ -29,4 +34,11 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   padding: 10px;
+}
+
+input {
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  background: #eae9e9;
 }
