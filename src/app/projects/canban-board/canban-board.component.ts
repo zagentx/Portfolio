@@ -9,15 +9,30 @@ export class CanbanBoardComponent {
   columns = [
     {
       title: 'To Do',
-      cards: ['Task 1', 'Task 2', 'Task 3'],
+      tasks: [],
+      newTask: '',
     },
     {
       title: 'In Progress',
-      cards: ['Task 4', 'Task 5'],
+      tasks: [],
+      newTask: '',
     },
     {
       title: 'Done',
-      cards: ['Task 6'],
+      tasks: [],
+      newTask: '',
     },
   ];
+
+  addCard(column: { newTask: string; tasks: any[] }) {
+    if (column.newTask) {
+      column.tasks.push(column.newTask);
+      column.newTask = '';
+    }
+  }
+
+  moveTask(taskIndex: number, fromColumnIndex: number, toColumnIndex: number) {
+    const task = this.columns[fromColumnIndex].tasks.splice(taskIndex, 1)[0];
+    this.columns[toColumnIndex].tasks.push(task);
+  }
 }
