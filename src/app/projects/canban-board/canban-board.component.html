@@ -18,7 +18,9 @@
                 *ngIf="columnIndex > 0"
                 (click)="moveTask(taskIndex, columnIndex, columnIndex - 1)">
               </i>
-              <span class="flex-grow-1 text-start text-truncate">{{ task }}</span>
+              <span class="flex-grow-1 text-start text-truncate">{{
+                task
+              }}</span>
               <i
                 class="bi bi-arrow-right-circle"
                 *ngIf="columnIndex < columns.length - 1"
@@ -29,10 +31,11 @@
         </div>
       </div>
 
-      <input
+      <textarea
         class="mt-2 mb-2"
         [(ngModel)]="column.newTask"
-        placeholder=" Aufgabe..." />
+        placeholder=" Aufgabe..."></textarea>
+
       <i class="bi bi-plus-circle-dotted px-1" (click)="addTask(column)"></i>
     </div>
   </div>
