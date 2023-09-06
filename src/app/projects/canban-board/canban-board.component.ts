@@ -35,4 +35,9 @@ export class CanbanBoardComponent {
     const task = this.columns[fromColumnIndex].tasks.splice(taskIndex, 1)[0];
     this.columns[toColumnIndex].tasks.push(task);
   }
+
+  autoGrow(element: { style: { height: string }; scrollHeight: string }) {
+    element.style.height = '5px';
+    element.style.height = element.scrollHeight + 'px';
+  }
 }
