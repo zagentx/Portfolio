@@ -24,7 +24,7 @@ export class CanbanBoardComponent {
     },
   ];
 
-  addCard(column: { newTask: string; tasks: any[] }) {
+  addTask(column: { newTask: string; tasks: any[] }) {
     if (column.newTask) {
       column.tasks.push(column.newTask);
       column.newTask = '';
