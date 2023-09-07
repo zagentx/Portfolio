@@ -40,34 +40,20 @@ h1 {
   padding: 5px;
 }
 
-//input {
-//  border: 0;
-//  border-radius: 5px;
-//  outline: 0;
-//  background: #eae9e9;
-//}
-
 span {
   margin-left: 5px;
   margin-right: 5px;
 }
 
 textarea {
-  overflow: hidden;
-  overflow-wrap: break-word;
-  height: 30px;
+  width: 100%;
+  //min-height: 30px;
+  max-height: 80px;
+  //line-height: 10px;
+  resize: none;
+  //height: 30px;
   border: 0;
   border-radius: 5px;
   outline: 0;
-  background: #eae9e9;
+  box-shadow: var(--ds-shadow-raised, 0 1px 1px #091e4240, 0 0 1px #091e424f);
 }
-
-//textarea:is(:focus, :valid) {
-//  border-width: 2px;
-//  padding: 14px;
-//  border-color: black;
-//}
-//
-//textarea::-webkit-scrollbar {
-//  width: 0;
-//}
