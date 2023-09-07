@@ -31,12 +31,22 @@
         </div>
       </div>
 
-      <textarea
-        class="mt-2 mb-2"
-        [(ngModel)]="column.newTask"
-        placeholder=" Aufgabe..."></textarea>
+      <div class="row">
+        <div class="col-9">
+          <textarea
+            autosize
+            [(ngModel)]="column.newTask"
+            placeholder=" Aufgabe..."
+            contenteditable>
+          </textarea>
+        </div>
 
-      <i class="bi bi-plus-circle-dotted px-1" (click)="addTask(column)"></i>
+        <div class="col">
+          <i
+            class="bi bi-plus-circle-dotted px-1"
+            (click)="addTask(column)"></i>
+        </div>
+      </div>
     </div>
   </div>
 </div>

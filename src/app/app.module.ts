@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
 import { CanbanBoardComponent } from './projects/canban-board/canban-board.component';
+import { AutosizeModule } from 'ngx-autosize';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CanbanBoardComponent } from './projects/canban-board/canban-board.compo
     NgOptimizedImage,
     NgbModule,
     FormsModule,
+    AutosizeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
