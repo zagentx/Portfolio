@@ -3,7 +3,7 @@
 
   <div class="board">
     <div class="column" *ngFor="let column of columns; let columnIndex = index">
-      <h3 class="fw-light">{{ column.title }}</h3>
+      <h4 class="fw-light">{{ column.title }}</h4>
 
       <hr />
 
@@ -34,15 +34,13 @@
       <div class="row">
         <div class="col">
           <textarea
+            class=""
             autosize
             [(ngModel)]="column.newTask"
             placeholder=" Aufgabe..."
             contenteditable>
           </textarea>
-          <i
-            class="bi bi-plus-circle-dotted px-1"
-            (click)="addTask(column)">
-          </i>
+          <i class="bi bi-plus-circle px-1" (click)="addTask(column)"> </i>
         </div>
       </div>
     </div>

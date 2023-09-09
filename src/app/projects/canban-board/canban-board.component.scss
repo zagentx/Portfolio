@@ -28,16 +28,32 @@ h1 {
   max-width: 298px;
   padding: 10px;
   margin: 5px;
-  border: 1px solid black;
+  //border: 1px solid black;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card {
   background-color: #fff;
+  width: 100%;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   padding: 5px;
+}
+
+//.card {
+//  width: 90%;
+//  padding-left: 3px;
+//  resize: none;
+//  border: 0;
+//  border-radius: 5px;
+//  outline: 0;
+//  box-shadow: var(--ds-shadow-raised, 0 1px 1px #091e4240, 0 0 1px #091e424f);
+//}
+
+.card:hover {
+  background-color: #f3f3f3;
 }
 
 span {
@@ -47,19 +63,46 @@ span {
 
 textarea {
   width: 100%;
-  //min-height: 30px;
+  margin-top: 10px;
   max-height: 80px;
-  //line-height: 10px;
+  padding-left: 5px;
   resize: none;
-  //height: 30px;
   border: 0;
   border-radius: 5px;
   outline: 0;
   box-shadow: var(--ds-shadow-raised, 0 1px 1px #091e4240, 0 0 1px #091e424f);
 }
 
-.bi-plus-circle-dotted {
+textarea:hover {
+  background-color: #f3f3f3;
+}
+
+.bi-plus-circle {
   position: relative;
   top: -45px;
-  left: 115px;
+  left: 118px;
+  opacity: 50%;
+}
+
+.bi-plus-circle:hover {
+  color: #568cdc;
+  border-radius: 5px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  opacity: 100%;
+  transform: scale(1.2);
+}
+
+.bi-arrow-right-circle,
+.bi-arrow-left-circle {
+  opacity: 50%;
+}
+
+.bi-arrow-left-circle:hover,
+.bi-arrow-right-circle:hover {
+  color: green;
+  opacity: 100%;
+  transform: scale(1.2);
 }
