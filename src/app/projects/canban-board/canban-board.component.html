@@ -15,6 +15,7 @@
             <div class="d-flex justify-content-between align-items-center">
               <i
                 class="bi bi-arrow-left-circle"
+                id="arrow-l"
                 *ngIf="columnIndex > 0"
                 (click)="moveTask(taskIndex, columnIndex, columnIndex - 1)">
               </i>
@@ -23,26 +24,32 @@
               </span>
               <i
                 class="bi bi-arrow-right-circle"
+                id="arrow-r"
                 *ngIf="columnIndex < columns.length - 1"
                 (click)="moveTask(taskIndex, columnIndex, columnIndex + 1)">
               </i>
+              <i
+                class="bi bi-x-circle"
+                id="delete"
+                (click)="deleteTask(columnIndex, taskIndex)">
+              </i>
             </div>
+            <i
+              class="bi bi-pencil"
+              id="edit"
+              (click)="editTask(columnIndex, taskIndex, newTask)"></i>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <textarea
-            class=""
-            autosize
-            [(ngModel)]="column.newTask"
-            placeholder=" Aufgabe..."
-            contenteditable>
-          </textarea>
-          <i class="bi bi-plus-circle px-1" (click)="addTask(column)"> </i>
-        </div>
-      </div>
+      <textarea
+        autosize
+        autofocus
+        [(ngModel)]="column.newTask"
+        placeholder=" Aufgabe erstellen..."
+        contenteditable>
+      </textarea>
+      <i class="bi bi-plus-circle" id="add" (click)="addTask(column)"> </i>
     </div>
   </div>
 </div>

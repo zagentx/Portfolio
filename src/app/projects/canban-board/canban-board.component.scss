@@ -1,5 +1,5 @@
 .container {
-  max-width: 900px;
+  max-width: 950px;
   margin-top: 15%;
   margin-bottom: 10%;
   text-align: center;
@@ -35,25 +35,23 @@ h1 {
 
 .card {
   background-color: #fff;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
-  padding: 5px;
+  left: 20px;
+  width: 85%;
+  padding: 3px 3px 5px 0;
+  resize: none;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  box-shadow: var(--ds-shadow-raised, 0 1px 1px #091e4240, 0 0 1px #091e424f);
 }
-
-//.card {
-//  width: 90%;
-//  padding-left: 3px;
-//  resize: none;
-//  border: 0;
-//  border-radius: 5px;
-//  outline: 0;
-//  box-shadow: var(--ds-shadow-raised, 0 1px 1px #091e4240, 0 0 1px #091e424f);
-//}
 
 .card:hover {
   background-color: #f3f3f3;
+  #delete,
+  #edit {
+    opacity: 1;
+  }
 }
 
 span {
@@ -62,8 +60,11 @@ span {
 }
 
 textarea {
-  width: 100%;
-  margin-top: 10px;
+  position: relative;
+  left: 25px;
+  width: 85%;
+  margin-top: 25px;
+  margin-left: -35px;
   max-height: 80px;
   padding-left: 5px;
   resize: none;
@@ -77,32 +78,48 @@ textarea:hover {
   background-color: #f3f3f3;
 }
 
-.bi-plus-circle {
+#add {
   position: relative;
-  top: -45px;
-  left: 118px;
+  top: -20px;
+  left: 33px;
   opacity: 50%;
 }
 
-.bi-plus-circle:hover {
-  color: #568cdc;
-  border-radius: 5px;
-  height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  opacity: 100%;
+#edit {
+  opacity: 0;
+  position: relative;
+  left: 108px;
+}
+
+#edit:hover {
+  color: black;
+  opacity: 1;
   transform: scale(1.2);
 }
 
-.bi-arrow-right-circle,
-.bi-arrow-left-circle {
+#arrow-l {
   opacity: 50%;
+  position: relative;
+  top: 10px;
+
+  left: -26px;
 }
 
-.bi-arrow-left-circle:hover,
-.bi-arrow-right-circle:hover {
-  color: green;
-  opacity: 100%;
+#arrow-r {
+  opacity: 50%;
+  position: relative;
+  top: 10px;
+  left: 44px;
+}
+
+#add:hover,
+#arrow-l:hover,
+#arrow-r:hover {
+  color: black;
+  opacity: 1;
   transform: scale(1.2);
+}
+
+#delete {
+  opacity: 0;
 }
