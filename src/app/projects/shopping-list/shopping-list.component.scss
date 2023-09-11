@@ -27,8 +27,8 @@ ul {
   border-radius: 5px;
   outline: 0;
   background: #f9f9f9;
-  border-bottom: 1px solid darkgrey;
   font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #amount-input {
@@ -37,16 +37,20 @@ ul {
   border-radius: 5px;
   outline: 0;
   background: #f9f9f9;
-  border-bottom: 1px solid darkgrey;
   font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #item-output {
   font-size: 1.2rem;
   background: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #amount-output {
   font-size: 1.2rem;
   background: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
