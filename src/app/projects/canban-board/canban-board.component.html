@@ -33,11 +33,12 @@
                 id="delete"
                 (click)="deleteTask(columnIndex, taskIndex)">
               </i>
+              <i
+                class="bi bi-pencil"
+                id="edit"
+                (click)="editTask(columnIndex, taskIndex, newTask)">
+              </i>
             </div>
-            <i
-              class="bi bi-pencil"
-              id="edit"
-              (click)="editTask(columnIndex, taskIndex, newTask)"></i>
           </div>
         </div>
       </div>
@@ -53,3 +54,35 @@
     </div>
   </div>
 </div>
+
+<!--test-->
+<div class="container">
+  <div class="board">
+    <div class="row align-items-center">
+      <div class="leftcircle">
+        <i class="bi bi-arrow-left-circle"> </i>
+      </div>
+
+      <div class="testcard">
+        <div class="d-flex flex-column align-items-end">
+          <p class="d-flex justify-content-between align-items-center w-100">
+            Aufgabe...
+          </p>
+        </div>
+      </div>
+
+      <div class="edit">
+        <i class="bi bi-pencil mt-2"> </i>
+      </div>
+
+      <div class="delete">
+        <i class="bi bi-x-circle mt-2"> </i>
+      </div>
+      <div class="rightcircle">
+        <i class="bi bi-arrow-right-circle"> </i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--test-->
