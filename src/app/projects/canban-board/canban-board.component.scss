@@ -85,16 +85,16 @@ textarea:hover {
   opacity: 50%;
 }
 
+#add:hover {
+  color: black;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
 #edit {
   opacity: 0;
   position: relative;
   left: 108px;
-}
-
-#edit:hover {
-  color: black;
-  opacity: 1;
-  transform: scale(1.2);
 }
 
 #arrow-l {
@@ -114,7 +114,9 @@ textarea:hover {
 
 #add:hover,
 #arrow-l:hover,
-#arrow-r:hover {
+#arrow-r:hover,
+#delete:hover,
+#edit:hover {
   color: black;
   opacity: 1;
   transform: scale(1.2);
@@ -122,4 +124,36 @@ textarea:hover {
 
 #delete {
   opacity: 0;
+}
+
+.leftcircle {
+  width: 17px;
+  height: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.testcard {
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rightcircle {
+  width: 17px;
+  height: 40px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.edit {
+  width: 17px;
+  height: 40px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.delete {
+  width: 17px;
+  height: 40px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
