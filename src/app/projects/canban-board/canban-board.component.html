@@ -7,78 +7,65 @@
 
       <hr />
 
-      <div class="row">
-        <div class="col-12">
-          <div
-            class="card"
-            *ngFor="let task of column.tasks; let taskIndex = index">
-            <div class="d-flex justify-content-between align-items-center">
-              <i
-                class="bi bi-arrow-left-circle"
-                id="arrow-l"
-                *ngIf="columnIndex > 0"
-                (click)="moveTask(taskIndex, columnIndex, columnIndex - 1)">
-              </i>
-              <span class="flex-grow-1 text-start text-truncate">
-                {{ task }}
-              </span>
-              <i
-                class="bi bi-arrow-right-circle"
-                id="arrow-r"
-                *ngIf="columnIndex < columns.length - 1"
-                (click)="moveTask(taskIndex, columnIndex, columnIndex + 1)">
-              </i>
-              <i
-                class="bi bi-x-circle"
-                id="delete"
-                (click)="deleteTask(columnIndex, taskIndex)">
-              </i>
-              <i
-                class="bi bi-pencil"
-                id="edit"
-                (click)="editTask(columnIndex, taskIndex, newTask)">
-              </i>
-            </div>
-          </div>
+      <div class="row" *ngFor="let task of column.tasks; let taskIndex = index">
+
+        <div class="icon">
+          <i
+            class="bi bi-arrow-left-circle"
+            id="move-l"
+            *ngIf="columnIndex > 0"
+            (click)="moveTask(taskIndex, columnIndex, columnIndex - 1)">
+          </i>
+        </div>
+
+        <div class="task-card">
+            <span class="task">
+              {{ task }}
+            </span>
+        </div>
+
+        <div class="icon">
+          <i
+            class="bi bi-x-circle"
+            id="delete"
+            (click)="deleteTask(columnIndex, taskIndex)">
+          </i>
+        </div>
+
+        <div class="icon">
+          <i
+            class="bi bi-pencil"
+            id="edit"
+            (click)="editTask(columnIndex, taskIndex, newTask)">
+          </i>
+        </div>
+
+        <div class="icon">
+          <i
+            class="bi bi-arrow-right-circle"
+            id="move-r"
+            *ngIf="columnIndex < columns.length - 1"
+            (click)="moveTask(taskIndex, columnIndex, columnIndex + 1)">
+          </i>
         </div>
       </div>
 
-      <textarea
-        autosize
-        autofocus
-        [(ngModel)]="column.newTask"
-        placeholder=" Aufgabe erstellen..."
-        contenteditable>
-      </textarea>
-      <i class="bi bi-plus-circle" id="add" (click)="addTask(column)"> </i>
-    </div>
-  </div>
-</div>
+      <div class="row">
+          <textarea
+            class="textarea"
+            autosize
+            autofocus
+            [(ngModel)]="column.newTask"
+            placeholder=" Aufgabe erstellen..."
+            contenteditable>
+          </textarea>
 
-<!--test-->
-<div class="container">
-  <div class="board">
-    <div class="row">
-      <div class="leftcircle">
-        <i class="bi bi-arrow-left-circle"> </i>
-      </div>
+          <div class="icon">
+            <i class="bi bi-plus-circle" id="add" (click)="addTask(column)"> </i>
+          </div>
 
-      <div class="testcard">
-          <div class="testdiv">Aufgabe...</div>
-      </div>
-
-      <div class="edit">
-        <i class="bi bi-pencil"> </i>
-      </div>
-
-      <div class="delete">
-        <i class="bi bi-x-circle"> </i>
-      </div>
-      <div class="rightcircle">
-        <i class="bi bi-arrow-right-circle"> </i>
       </div>
     </div>
   </div>
 </div>
 
-<!--test-->
