@@ -18,13 +18,11 @@
           </i>
         </div>
 
-        <div class="task-card">
-            <span class="task" [contentEditable]="isEditable">
+        <div class="task-card" [id]="tk">
+            <span class="task">
               {{ task }}
             </span>
         </div>
-
-
 
         <div class="icon">
           <i
@@ -38,7 +36,7 @@
           <i
             class="bi bi-pencil"
             id="edit"
-            (click)="toggleEdit()">
+            (click)="editTask(columnIndex, taskIndex, newTask)">
           </i>
         </div>
 

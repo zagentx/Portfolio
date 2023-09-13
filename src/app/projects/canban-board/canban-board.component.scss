@@ -49,10 +49,6 @@ h4 {
   white-space: nowrap;
 }
 
-.task-card span:focus {
-  outline: none;
-}
-
 .textarea {
   width: 190px;
   height: 40px !important;
@@ -62,7 +58,7 @@ h4 {
   padding-top: 10px;
   padding-left: 3px;
   align-items: flex-start;
-  line-height: 15px;
+  line-height: 10px;
   resize: none;
   border-radius: 5px;
   border: 0;
