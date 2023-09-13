@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-canban-board',
@@ -7,6 +6,9 @@ import { style } from '@angular/animations';
   styleUrls: ['./canban-board.component.scss'],
 })
 export class CanbanBoardComponent implements OnInit {
+  isEditable = false;
+  isTitleEditable = -1;
+
   columns = [
     {
       title: 'To Do',
@@ -23,8 +25,12 @@ export class CanbanBoardComponent implements OnInit {
       tasks: [] as string[],
       newTask: '',
     },
+    {
+      title: '',
+      tasks: [] as string[],
+      newTask: '',
+    },
   ];
-  newTask = '';
 
   ngOnInit() {
     const savedColumns = localStorage.getItem('columns');
@@ -51,15 +57,30 @@ export class CanbanBoardComponent implements OnInit {
     localStorage.setItem('columns', JSON.stringify(this.columns));
   }
 
-  editTask(columnIndex: number, taskIndex: number, newTask: string) {
-    this.columns[columnIndex].tasks[taskIndex] = newTask;
-    this.saveTasks();
+  toggleEdit() {
+    this.isEditable = !this.isEditable;
   }
 
-  tk: any;
+  toggleTitleEdit(index: number) {
+    this.isTitleEditable = this.isTitleEditable === index ? -1 : index;
+  }
 
   deleteTask(columnIndex: number, taskIndex: number) {
     this.columns[columnIndex].tasks.splice(taskIndex, 1);
+    this.saveTasks();
+  }
+
+  addColumn() {
+    this.columns.push({
+      title: '',
+      tasks: [] as string[],
+      newTask: '',
+    });
+    this.saveTasks();
+  }
+
+  deleteColumn(index: number) {
+    this.columns.splice(index, 1);
     this.saveTasks();
   }
 }
