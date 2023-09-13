@@ -18,7 +18,7 @@
           </i>
         </div>
 
-        <div class="task-card">
+        <div class="task-card" [id]="tk">
             <span class="task">
               {{ task }}
             </span>
@@ -54,7 +54,6 @@
           <textarea
             class="textarea"
             autosize
-            autofocus
             [(ngModel)]="column.newTask"
             placeholder=" Aufgabe erstellen..."
             contenteditable>
