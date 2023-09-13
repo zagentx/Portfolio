@@ -2,13 +2,21 @@
   <h1 class="fw-light">Canban-Board</h1>
 
   <div class="board">
-    <div class="column" *ngFor="let column of columns; let columnIndex = index">
-      <h4 class="fw-light">{{ column.title }}</h4>
+<!--    <div class="column" *ngFor="let column of columns; let columnIndex = index">-->
+<!--      <h4 class="fw-light">{{ column.title }}</h4>-->
+
+      <div class="column" *ngFor="let column of columns; let columnIndex = index">
+        <h4 class="fw-light" [contentEditable]="isTitleEditable === columnIndex">
+          {{ column.title }}
+        </h4>
+        <div class="icon">
+          <i class="bi bi-pencil" id="edit-title" (click)="toggleTitleEdit(columnIndex)"> </i>
+          <i class="bi bi-x-circle" id="delete-column" (click)="deleteColumn(columnIndex)"></i>
+        </div>
 
       <hr />
 
       <div class="row" *ngFor="let task of column.tasks; let taskIndex = index">
-
         <div class="icon">
           <i
             class="bi bi-arrow-left-circle"
@@ -18,10 +26,10 @@
           </i>
         </div>
 
-        <div class="task-card" [id]="tk">
-            <span class="task">
-              {{ task }}
-            </span>
+        <div class="task-card">
+          <span class="task" [contentEditable]="isEditable">
+            {{ task }}
+          </span>
         </div>
 
         <div class="icon">
@@ -33,11 +41,7 @@
         </div>
 
         <div class="icon">
-          <i
-            class="bi bi-pencil"
-            id="edit"
-            (click)="editTask(columnIndex, taskIndex, newTask)">
-          </i>
+          <i class="bi bi-pencil" id="edit" (click)="toggleEdit()"> </i>
         </div>
 
         <div class="icon">
@@ -51,20 +55,25 @@
       </div>
 
       <div class="row">
-          <textarea
-            class="textarea"
-            autosize
-            [(ngModel)]="column.newTask"
-            placeholder=" Aufgabe erstellen..."
-            contenteditable>
-          </textarea>
+        <textarea
+          class="textarea"
+          autosize
+          [(ngModel)]="column.newTask"
+          placeholder=" Aufgabe erstellen..."
+          contenteditable>
+        </textarea>
 
-          <div class="icon">
-            <i class="bi bi-plus-circle" id="add" (click)="addTask(column)"> </i>
-          </div>
-
+        <div class="icon">
+          <i class="bi bi-plus-circle" id="add" (click)="addTask(column)"> </i>
+        </div>
       </div>
     </div>
+
+      <!-- bestehender Code -->
+      <div class="icon">
+        <i class="bi bi-plus-circle" id="add-column" (click)="addColumn()"> </i>
+      </div>
+
+
   </div>
 </div>
-
