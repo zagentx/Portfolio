@@ -7,9 +7,6 @@ import { style } from '@angular/animations';
   styleUrls: ['./canban-board.component.scss'],
 })
 export class CanbanBoardComponent implements OnInit {
-  newTask = '';
-  isEditable = false;
-
   columns = [
     {
       title: 'To Do',
@@ -27,6 +24,7 @@ export class CanbanBoardComponent implements OnInit {
       newTask: '',
     },
   ];
+  newTask = '';
 
   ngOnInit() {
     const savedColumns = localStorage.getItem('columns');
@@ -53,9 +51,12 @@ export class CanbanBoardComponent implements OnInit {
     localStorage.setItem('columns', JSON.stringify(this.columns));
   }
 
-  toggleEdit() {
-    this.isEditable = !this.isEditable;
+  editTask(columnIndex: number, taskIndex: number, newTask: string) {
+    this.columns[columnIndex].tasks[taskIndex] = newTask;
+    this.saveTasks();
   }
+
+  tk: any;
 
   deleteTask(columnIndex: number, taskIndex: number) {
     this.columns[columnIndex].tasks.splice(taskIndex, 1);
