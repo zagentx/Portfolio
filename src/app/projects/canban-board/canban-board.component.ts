@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-canban-board',
@@ -54,6 +55,8 @@ export class CanbanBoardComponent implements OnInit {
     this.columns[columnIndex].tasks[taskIndex] = newTask;
     this.saveTasks();
   }
+
+  tk: any;
 
   deleteTask(columnIndex: number, taskIndex: number) {
     this.columns[columnIndex].tasks.splice(taskIndex, 1);
