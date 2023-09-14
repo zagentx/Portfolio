@@ -1,5 +1,5 @@
 .container {
-  swidth: 100%;
+  width: 100%;
   margin-top: 15%;
   margin-bottom: 10%;
 }
@@ -42,14 +42,14 @@ h4 {
 
 .board {
   display: flex;
-  width: 1275px;
+  width: 100%;
   padding-left: 5px;
   align-items: baseline;
+  justify-content: center;
 }
 
 .column {
-  flex: 1;
-  max-width: 350px;
+  max-width: 305px;
   min-width: 305px;
   padding: 10px;
   margin: 5px;
@@ -132,8 +132,6 @@ h4 {
   transform: scale(1.2);
 }
 
-
-
 #move-l {
   margin-left: 10px;
 }
@@ -155,7 +153,7 @@ h4 {
   color: dodgerblue;
 }
 
-.add-column{
+.add-column {
   margin-left: 5px;
   margin-top: 80px;
   opacity: 50%;
