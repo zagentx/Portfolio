@@ -1,5 +1,5 @@
 .container {
-  swidth: 100%;
+  width: 100%;
   margin-top: 15%;
   margin-bottom: 10%;
 }
@@ -16,13 +16,19 @@ h1 {
 }
 
 h4 {
-  width: 250px;
+  width: 60%;
+  margin-top: 5px;
+  margin-left: 35px;
+  margin-right: 5px;
+  outline: none;
   text-align: center;
 }
 
+
 #edit-title {
-  margin-top: -10px;
+  margin-top: 5px;
   margin-left: 5px;
+
 }
 
 #edit-title:hover {
@@ -31,7 +37,7 @@ h4 {
 }
 
 #delete-column {
-  margin-top: -10px;
+  margin-top: 5px;
   margin-right: -5px;
 }
 
@@ -45,11 +51,12 @@ h4 {
   width: 1275px;
   padding-left: 5px;
   align-items: baseline;
+  justify-content: center;
 }
 
 .column {
   flex: 1;
-  max-width: 350px;
+  max-width: 305px;
   min-width: 305px;
   padding: 10px;
   margin: 5px;
@@ -157,6 +164,8 @@ h4 {
 
 .add-column{
   margin-left: 5px;
+  position: relative;
+  top: 35px;
   margin-top: 80px;
   opacity: 50%;
   width: 16px;
