@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-canban-board',
-  templateUrl: './canban-board.component.html',
-  styleUrls: ['./canban-board.component.scss'],
+  selector: 'app-kanban-board',
+  templateUrl: './kanban-board.component.html',
+  styleUrls: ['./kanban-board.component.scss'],
 })
-export class CanbanBoardComponent implements OnInit {
+export class KanbanBoardComponent implements OnInit {
   isEditable = false;
   isTitleEditable = -1;
 
