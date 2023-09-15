@@ -8,6 +8,7 @@ import { ImpressumComponent } from './pages/impressum/impressum.component';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
 import { KanbanBoardComponent } from './projects/kanban-board/kanban-board.component';
+import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'datenschutz', component: DatenschutzComponent },
   { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'kanban-board', component: KanbanBoardComponent },
+  { path: 'quiz-app', component: QuizAppComponent },
 ];
 
 @NgModule({
