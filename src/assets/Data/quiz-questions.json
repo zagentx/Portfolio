@@ -2,6 +2,7 @@
   "questions": [
     {
       "question": "Wer hat die Relativitätstheorie formuliert?",
+      "options": ["Marcel Neumann", "Heidi Klum", "Peter Pan", "Mickey Mouse"],
       "answer": "Albert Einstein"
     },
     {
