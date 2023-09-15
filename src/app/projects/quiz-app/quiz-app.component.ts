@@ -38,4 +38,10 @@ export class QuizAppComponent {
     }
     this.currentQuestionIndex++;
   }
+
+  restartQuiz() {
+    this.score = 0;
+    this.currentQuestionIndex = 0;
+    this.userAnswer = '';
+  }
 }

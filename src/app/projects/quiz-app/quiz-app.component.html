@@ -1,26 +1,30 @@
 <div class="container">
+  <h1 class="fw-light text-center mb-5">{{ title }}</h1>
 
-  <h1 class="fw-light">{{ title }}</h1>
-  <p>Punktestand: {{ score }}</p>
-  <p *ngIf="incorrectAnswer">❌</p>
-  <p *ngIf="correctAnswer">✅</p>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="fw-light">Punktestand: {{ score }}</h5>
+      <p *ngIf="incorrectAnswer">❌</p>
+      <p *ngIf="correctAnswer">✅</p>
 
-  <div *ngIf="currentQuestionIndex < questions.length">
-    <p>{{ questions[currentQuestionIndex].question }}</p>
-    <div *ngFor="let option of questions[currentQuestionIndex].options">
+      <div *ngIf="currentQuestionIndex < questions.length">
+        <h3 class="fw-light mb-3 mt-3">{{ questions[currentQuestionIndex].question }}</h3>
+        <div *ngFor="let option of questions[currentQuestionIndex].options">
+          <input
+            type="radio"
+            name="option"
+            value="{{ option }}"
+            [(ngModel)]="userAnswer" />
+          {{ option }}
+        </div>
 
-      <input
-        type="radio"
-        name="option"
-        value="{{ option }}"
-        [(ngModel)]="userAnswer" />
-      {{ option }}
+        <button class="btn btn-primary mt-3" (click)="checkAnswer(userAnswer)">Antwort einreichen</button>
+      </div>
+
+      <div *ngIf="currentQuestionIndex >= questions.length">
+        <p>Quiz beendet!</p>
+        <button (click)="restartQuiz()">Quiz wiederholen</button>
+      </div>
     </div>
-
-    <button (click)="checkAnswer(userAnswer)">Antwort einreichen</button>
-  </div>
-
-  <div *ngIf="currentQuestionIndex >= questions.length">
-    <p>Quiz beendet!</p>
   </div>
 </div>
