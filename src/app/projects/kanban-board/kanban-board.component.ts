@@ -25,11 +25,6 @@ export class KanbanBoardComponent implements OnInit {
       tasks: [] as string[],
       newTask: '',
     },
-    {
-      title: '',
-      tasks: [] as string[],
-      newTask: '',
-    },
   ];
 
   ngOnInit() {
@@ -72,7 +67,7 @@ export class KanbanBoardComponent implements OnInit {
 
   addColumn() {
     this.columns.push({
-      title: '',
+      title: 'Titel ...',
       tasks: [] as string[],
       newTask: '',
     });
