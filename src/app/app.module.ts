@@ -18,6 +18,7 @@ import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component'
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
 import { KanbanBoardComponent } from './projects/kanban-board/kanban-board.component';
 import { AutosizeModule } from 'ngx-autosize';
+import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { AutosizeModule } from 'ngx-autosize';
     DatenschutzComponent,
     ShoppingListComponent,
     KanbanBoardComponent,
+    QuizAppComponent,
   ],
   imports: [
     BrowserModule,
