@@ -28,6 +28,7 @@
       <hr />
 
       <div class="row" *ngFor="let task of column.tasks; let taskIndex = index">
+
         <div class="icon">
           <i
             class="bi bi-arrow-left-circle"
@@ -43,6 +44,8 @@
           </span>
         </div>
 
+
+
         <div class="icon">
           <i
             class="bi bi-x-circle"
@@ -52,7 +55,11 @@
         </div>
 
         <div class="icon">
-          <i class="bi bi-pencil" id="edit" (click)="toggleEdit()"> </i>
+          <i
+            class="bi bi-pencil"
+            id="edit"
+            (click)="toggleEdit()">
+          </i>
         </div>
 
         <div class="icon">
@@ -85,3 +92,4 @@
     </div>
   </div>
 </div>
+
