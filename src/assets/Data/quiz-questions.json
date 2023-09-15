@@ -1,0 +1,72 @@
+{
+  "questions": [
+    {
+      "question": "Wer hat die Relativitätstheorie formuliert?",
+      "answer": "Albert Einstein"
+    },
+    {
+      "question": "Welcher Planet ist der größte im Sonnensystem?",
+      "answer": "Jupiter"
+    },
+    {
+      "question": "Wer ist der Autor von 'Faust'?",
+      "answer": "Johann Wolfgang von Goethe"
+    },
+    {
+      "question": "Was ist die Quadratwurzel von 144?",
+      "answer": "12"
+    },
+    {
+      "question": "In welchem Jahr fiel die Berliner Mauer?",
+      "answer": "1989"
+    },
+    {
+      "question": "Wer hat das Telefon erfunden?",
+      "answer": "Alexander Graham Bell"
+    },
+    {
+      "question": "Was ist die Hauptstadt von Frankreich?",
+      "answer": "Paris"
+    },
+    {
+      "question": "Wer hat die Mona Lisa gemalt?",
+      "answer": "Leonardo da Vinci"
+    },
+    {
+      "question": "Wie viele Bundesländer hat Deutschland?",
+      "answer": "16"
+    },
+    {
+      "question": "Wer hat die Vier-Jahreszeiten komponiert?",
+      "answer": "Antonio Vivaldi"
+    },
+    {
+      "question": "Was ist der höchste Berg der Welt?",
+      "answer": "Mount Everest"
+    },
+    {
+      "question": "Wer hat das Periodensystem der Elemente erstellt?",
+      "answer": "Dmitri Mendelejew"
+    },
+    {
+      "question": "Was ist das kleinste Land der Welt?",
+      "answer": "Vatikanstadt"
+    },
+    {
+      "question": "Wer hat den Nobelpreis gestiftet?",
+      "answer": "Alfred Nobel"
+    },
+    {
+      "question": "Was ist die tiefste Stelle im Ozean?",
+      "answer": "Marianengraben"
+    },
+    {
+      "question": "Wer hat den ersten Computer erfunden?",
+      "answer": "Konrad Zuse"
+    },
+    {
+      "question": "Was ist das am häufigsten gesprochene Sprache der Welt?",
+      "answer": "Mandarin Chinesisch"
+    }
+  ]
+}
