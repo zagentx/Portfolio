@@ -18,12 +18,12 @@
           {{ option }}
         </div>
 
-        <button class="btn btn-primary mt-3" (click)="checkAnswer(userAnswer)">Antwort einreichen</button>
+        <button class="btn btn-warning mt-3" (click)="checkAnswer(userAnswer)">Antwort einreichen</button>
       </div>
 
       <div *ngIf="currentQuestionIndex >= questions.length">
         <p>Quiz beendet!</p>
-        <button (click)="restartQuiz()">Quiz wiederholen</button>
+        <button class="btn btn-secondary" (click)="restartQuiz()">Quiz wiederholen</button>
       </div>
     </div>
   </div>
