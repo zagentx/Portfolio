@@ -23,7 +23,37 @@ export class QuizAppComponent {
       options: ['Newton', 'Einstein', 'Galileo', 'Kepler'],
       answer: 'Einstein',
     },
-    // Fügen Sie hier weitere Fragen hinzu...
+
+    {
+      question: 'Welcher Planet ist der größte im Sonnensystem?',
+      options: ['Mars', 'Venus', 'Saturn', 'Jupiter'],
+      answer: 'Jupiter',
+    },
+    {
+      question: "Wer ist der Autor von 'Faust'?",
+      options: [
+        'Friedrich Schiller',
+        'Thomas Mann',
+        'Hermann Hesse',
+        'Johann Wolfgang von Goethe',
+      ],
+      answer: 'Johann Wolfgang von Goethe',
+    },
+    {
+      question: 'Was ist die Quadratwurzel von 144?',
+      options: ['10', '11', '12', '13'],
+      answer: '12',
+    },
+    {
+      question: 'In welchem Jahr fiel die Berliner Mauer?',
+      options: ['1987', '1988', '1989', '1990'],
+      answer: '1989',
+    },
+    {
+      question: 'Wer hat das Telefon erfunden?',
+      options: ['Nikola Tesla', 'Thomas Edison', 'Tony Stark'],
+      answer: "Alexander Graham",
+    },
   ];
   currentQuestionIndex = 0;
 
