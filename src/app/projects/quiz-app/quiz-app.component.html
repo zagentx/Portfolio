@@ -4,19 +4,19 @@
   <div class="card">
     <div class="card-body">
       <h5 class="fw-light">Punktestand: {{ score }}</h5>
-      <p *ngIf="incorrectAnswer">❌</p>
-      <p *ngIf="correctAnswer">✅</p>
 
       <div *ngIf="currentQuestionIndex < questions.length">
-        <h3 class="fw-light mb-3 mt-3">{{ questions[currentQuestionIndex].question }}</h3>
+        <h3 class="fw-light mb-3 mt-3">
+          {{ questions[currentQuestionIndex].question }}
+        </h3>
 
-        <!-- Alert mit richtig oder falsch hinzugefügt -->
         <div *ngIf="currentQuestionIndex < questions.length">
           <div class="alert alert-success" *ngIf="correctAnswer">
             Antwort richtig!
           </div>
           <div class="alert alert-danger" *ngIf="incorrectAnswer">
-            Antwort falsch! Die richtige Antwort ist: {{ questions[currentQuestionIndex].answer }}
+            Antwort falsch! Die richtige Antwort ist:
+            {{ questions[currentQuestionIndex].answer }}
           </div>
         </div>
 
@@ -29,14 +29,16 @@
           {{ option }}
         </div>
 
-        <button class="btn btn-warning mt-3" (click)="checkAnswer(userAnswer)">Antwort einreichen</button>
-
-
+        <button class="btn btn-warning mt-3" (click)="checkAnswer(userAnswer)">
+          Antwort einreichen
+        </button>
       </div>
 
       <div *ngIf="currentQuestionIndex >= questions.length">
         <p>Quiz beendet!</p>
-        <button class="btn btn-secondary" (click)="restartQuiz()">Quiz wiederholen</button>
+        <button class="btn btn-secondary" (click)="restartQuiz()">
+          Quiz wiederholen
+        </button>
       </div>
     </div>
   </div>
