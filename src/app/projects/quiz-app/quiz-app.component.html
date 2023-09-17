@@ -9,6 +9,17 @@
 
       <div *ngIf="currentQuestionIndex < questions.length">
         <h3 class="fw-light mb-3 mt-3">{{ questions[currentQuestionIndex].question }}</h3>
+
+        <!-- Alert mit richtig oder falsch hinzugefügt -->
+        <div *ngIf="currentQuestionIndex < questions.length">
+          <div class="alert alert-success" *ngIf="correctAnswer">
+            Antwort richtig!
+          </div>
+          <div class="alert alert-danger" *ngIf="incorrectAnswer">
+            Antwort falsch! Die richtige Antwort ist: {{ questions[currentQuestionIndex].answer }}
+          </div>
+        </div>
+
         <div *ngFor="let option of questions[currentQuestionIndex].options">
           <input
             type="radio"
@@ -19,6 +30,8 @@
         </div>
 
         <button class="btn btn-warning mt-3" (click)="checkAnswer(userAnswer)">Antwort einreichen</button>
+
+
       </div>
 
       <div *ngIf="currentQuestionIndex >= questions.length">
