@@ -1,0 +1,129 @@
+{
+  "questions": [
+    {
+      "question": "Welcher Planet ist der größte im Sonnensystem?",
+      "options": ["Jupiter", "Mars", "Erde", "Venus"],
+      "answer": "Jupiter"
+    },
+    {
+      "question": "Was ist die Quadratwurzel von 144?",
+      "options": ["12", "14", "16", "18"],
+      "answer": "12"
+    },
+    {
+      "question": "In welchem Jahr fiel die Berliner Mauer?",
+      "options": ["1989", "1990", "1991", "1992"],
+      "answer": "1989"
+    },
+    {
+      "question": "Wer hat das Telefon erfunden?",
+      "options": [
+        "Alexander Graham Bell",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Guglielmo Marconi"
+      ],
+      "answer": "Alexander Graham Bell"
+    },
+    {
+      "question": "Was ist die Hauptstadt von Frankreich?",
+      "options": ["Paris", "Berlin", "London", "Rom"],
+      "answer": "Paris"
+    },
+    {
+      "question": "Wer hat die Mona Lisa gemalt?",
+      "options": ["Leonardo da Vinci", "Michelangelo", "Raffael", "Caravaggio"],
+      "answer": "Leonardo da Vinci"
+    },
+    {
+      "question": "Wie viele Bundesländer hat Deutschland?",
+      "options": ["16", "15", "14", "13"],
+      "answer": "16"
+    },
+    {
+      "question": "Wer hat die Vier-Jahreszeiten komponiert?",
+      "options": [
+        "Antonio Vivaldi",
+        "Johann Sebastian Bach",
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven"
+      ],
+      "answer": "Antonio Vivaldi"
+    },
+    {
+      "question": "Was ist der höchste Berg der Welt?",
+      "options": ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
+      "answer": "Mount Everest"
+    },
+    {
+      "question": "Wer hat das Periodensystem der Elemente erstellt?",
+      "options": [
+        "Dmitri Mendelejew",
+        "Marie Curie",
+        "Niels Bohr",
+        "Ernest Rutherford"
+      ],
+      "answer": "Dmitri Mendelejew"
+    },
+    {
+      "question": "Was ist das kleinste Land der Welt?",
+      "options": ["Vatikanstadt", "Monaco", "Nauru", "Tuvalu"],
+      "answer": "Vatikanstadt"
+    },
+    {
+      "question": "Wer hat den Nobelpreis gestiftet?",
+      "options": [
+        "Alfred Nobel",
+        "Marie Curie",
+        "Albert Einstein",
+        "Niels Bohr"
+      ],
+      "answer": "Alfred Nobel"
+    },
+    {
+      "question": "Was ist die tiefste Stelle im Ozean?",
+      "options": [
+        "Marianengraben",
+        "Puerto Rico Trench",
+        "Java Trench",
+        "Kuril-Kamchatka Trench"
+      ],
+      "answer": "Marianengraben"
+    },
+    {
+      "question": "Wer hat den ersten Computer erfunden?",
+      "options": [
+        "Konrad Zuse",
+        "Alan Turing",
+        "John von Neumann",
+        "Charles Babbage"
+      ],
+      "answer": "Konrad Zuse"
+    },
+    {
+      "question": "Was ist das am häufigsten gesprochene Sprache der Welt?",
+      "options": ["Marcel Neumann", "Heidi Klum", "Peter Pan", "Mickey Mouse"],
+      "answer": "Mandarin Chinesisch"
+    },
+    {
+      "question": "Was ist die Hauptstadt von Deutschland?",
+      "options": ["Berlin", "München", "Hamburg", "Köln"],
+      "answer": "Berlin"
+    },
+    {
+      "question": "Wer hat die Relativitätstheorie formuliert?",
+      "options": ["Newton", "Einstein", "Galileo", "Kepler"],
+      "answer": "Einstein"
+    },
+    {
+      "question": "Wer ist der Autor von 'Faust'?",
+      "options": [
+        "Friedrich Schiller",
+        "Thomas Mann",
+        "Hermann Hesse",
+        "Johann Wolfgang von Goethe"
+      ],
+      "answer": "Johann Wolfgang von Goethe"
+    }
+  ]
+}
