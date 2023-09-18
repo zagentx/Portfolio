@@ -1,0 +1,102 @@
+<!--<div class="container">-->
+<!--  <h1 class="fw-light mb-5">Quiz-Auswahl</h1>-->
+
+<!--  &lt;!&ndash; QuizTopicSelector-Komponente &ndash;&gt;-->
+<!--  <div class="mb-3">-->
+<!--    <label for="quizTopic" class="form-label">Wählen Sie ein Quiz-Thema:</label>-->
+<!--    <select class="form-select" id="quizTopic" [(ngModel)]="selectedTopic">-->
+<!--      <option *ngFor="let topic of quizTopics">{{ topic }}</option>-->
+<!--    </select>-->
+<!--  </div>-->
+
+
+<!--  <ngb-carousel>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <div class="picsum-img-wrapper">-->
+<!--        <img-->
+<!--          ngSrc="../../../assets/img/quiz-bg.png"-->
+<!--          height="427"-->
+<!--          width="641"-->
+<!--          alt="Allgemeinwissen" />-->
+<!--      </div>-->
+<!--      <div class="carousel-caption">-->
+<!--        <h3>Allgemeinwissen</h3>-->
+<!--        <p>-->
+<!--          Teste dein Wissen mit unterschiedlichen Fragen zu Allgemeinthemen.-->
+<!--        </p>-->
+<!--        <button class="btn btn-warning" routerLink="/quiz-app">Zum Quiz</button>-->
+
+<!--      </div>-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <div class="picsum-img-wrapper">-->
+<!--        <img-->
+<!--          ngSrc="../../../assets/img/quiz-bg.png"-->
+<!--          height="427"-->
+<!--          width="641"-->
+<!--          alt="Computertechnik"-->
+<!--          style="cursor: pointer" />-->
+<!--      </div>-->
+<!--      <div class="carousel-caption">-->
+<!--        <h3>Computertechnik</h3>-->
+<!--        <p>-->
+<!--          Teste dein Wissen mit unterschiedlichen Fragen zu Computertechnik.-->
+<!--        </p>-->
+<!--        <button class="btn btn-warning" routerLink="/quiz-app">Zum Quiz</button>-->
+<!--      </div>-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <div class="picsum-img-wrapper">-->
+<!--        <img-->
+<!--          ngSrc="../../../assets/img/quiz-bg.png"-->
+<!--          height="427"-->
+<!--          width="641"-->
+<!--          alt="Film & Fernsehen"-->
+<!--          style="cursor: pointer" />-->
+<!--      </div>-->
+<!--      <div class="carousel-caption">-->
+<!--        <h3>Film & Fernsehen</h3>-->
+<!--        <p>-->
+<!--          Teste dein Wissen mit unterschiedlichen Fragen zu Film & Fernsehen.-->
+<!--        </p>-->
+<!--        <button class="btn btn-warning" routerLink="/quiz-app">Zum Quiz</button>-->
+
+<!--      </div>-->
+<!--    </ng-template>-->
+<!--  </ngb-carousel>-->
+<!--</div>-->
+
+
+<div class="container">
+  <h1 class="fw-light mb-5">Quiz-Auswahl</h1>
+
+  <!-- QuizTopicSelector-Komponente -->
+  <div class="mb-3">
+    <label for="quizTopic" class="form-label">Wählen Sie ein Quiz-Thema:</label>
+    <select class="form-select" id="quizTopic" [(ngModel)]="selectedTopic" (change)="changeSlide()">
+      <option *ngFor="let topic of quizTopics; let i = index" [value]="i">{{ topic }}</option>
+    </select>
+  </div>
+
+  <ngb-carousel #carousel>
+    <ng-template ngbSlide *ngFor="let topic of quizTopics; let i = index">
+      <div class="picsum-img-wrapper">
+        <img
+          ngSrc="../../../assets/img/quiz-bg.png"
+          height="427"
+          width="641"
+          [alt]="topic"
+          style="cursor: pointer" />
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ topic }}</h3>
+        <p>
+          Teste dein Wissen mit unterschiedlichen Fragen zu {{ topic }}.
+        </p>
+        <button class="btn btn-warning" [routerLink]="'/quiz-app/' + i">Zum Quiz</button>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+
