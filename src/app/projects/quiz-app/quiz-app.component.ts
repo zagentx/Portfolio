@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-// import * as quizQuestions from '../../../assets/data/quiz-questions.json';
-import * as quizData from '../../../assets/data/quiz-questions.json';
-const quizQuestions: any = (quizData as any).default;
-
+import * as quizQuestions from '../../../assets/data/quiz-questions.json';
 
 @Component({
   selector: 'app-quiz-app',
@@ -18,24 +15,6 @@ export class QuizAppComponent {
   userAnswer: string = '';
 
   questions = quizQuestions;
-
-  // questions = [
-  //   {
-  //     question: 'Welcher Planet ist der größte im Sonnensystem?',
-  //     options: ['Jupiter', 'Mars', 'Erde', 'Venus'],
-  //     answer: 'Jupiter',
-  //   },
-  //   {
-  //     question: 'Was ist die Quadratwurzel von 144?',
-  //     options: ['12', '14', '16', '18'],
-  //     answer: '12',
-  //   },
-  //   {
-  //     question: 'In welchem Jahr fiel die Berliner Mauer?',
-  //     options: ['1989', '1990', '1991', '1992'],
-  //     answer: '1989',
-  //   },
-  // ];
 
   currentQuestionIndex = 0;
 
@@ -54,11 +33,10 @@ export class QuizAppComponent {
       this.incorrectAnswer = true;
     }
 
-    this.loadNextQuestion();
-
     setTimeout(() => {
       this.correctAnswer = false;
       this.incorrectAnswer = false;
+      this.loadNextQuestion();
     }, 2500);
   }
 
