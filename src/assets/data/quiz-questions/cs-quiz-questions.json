@@ -1,15 +1,5 @@
 [
   {
-    "question": "Wer führte Regie bei 'Der Pate'?",
-    "options": [
-      "Martin Scorsese",
-      "Francis Ford Coppola",
-      "Steven Spielberg",
-      "George Lucas"
-    ],
-    "answer": "Francis Ford Coppola"
-  },
-  {
     "question": "Welches Unternehmen hat das Betriebssystem Windows entwickelt?",
     "options": ["Apple", "IBM", "Microsoft", "Google"],
     "answer": "Microsoft"

@@ -37,7 +37,9 @@
         </div>
 
         <button class="btn btn-warning mt-3" (click)="checkAnswer(userAnswer)">
-          Antwort einreichen
+          Antwort einreichen</button>
+        <button class="btn btn-danger mt-3"  id="btn-danger" (click)="endQuiz()">
+          Quiz beenden
         </button>
       </div>
 
@@ -46,6 +48,7 @@
         <button class="btn btn-secondary" (click)="restartQuiz()">
           Quiz wiederholen
         </button>
+        <button class="btn btn-danger mt-3" (click)="endQuiz()">Quiz beenden</button>
       </div>
     </div>
   </div>
