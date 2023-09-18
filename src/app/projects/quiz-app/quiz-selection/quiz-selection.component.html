@@ -1,0 +1,55 @@
+<div class="container">
+  <h1 class="fw-light mb-5">Quiz-Auswahl</h1>
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img
+            ngSrc="../../../assets/img/quiz-bg.png"
+            height="427"
+            width="641"
+            alt="Allgemeinwissen"
+            routerLink="/quiz-app" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Allgemeinwissen</h3>
+          <p>
+            Teste dein Wissen mit unterschiedlichen Fragen zu Allgemeinthemen.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img
+            ngSrc="../../../assets/img/quiz-bg.png"
+            height="427"
+            width="641"
+            alt="Computertechnik"
+            style="cursor: pointer"
+            routerLink="/quiz-app" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Computertechnik</h3>
+          <p>
+            Teste dein Wissen mit unterschiedlichen Fragen zu Computertechnik.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img
+            ngSrc="../../../assets/img/quiz-bg.png"
+            height="427"
+            width="641"
+            alt="Film & Fernsehen"
+            style="cursor: pointer"
+            routerLink="/quiz-app" />
+        </div>
+        <div class="carousel-caption">
+          <h3>Film & Fernsehen</h3>
+          <p>
+            Teste dein Wissen mit unterschiedlichen Fragen zu Film & Fernsehen.
+          </p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+</div>
