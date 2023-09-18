@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import * as quizQuestions from '../../../assets/data/quiz-questions.json';
+import { Component, Input } from '@angular/core';
+import * as quizQuestions from '../../../assets/data/quiz-questions/gk-quiz-questions.json';
 
 @Component({
   selector: 'app-quiz-app',
@@ -37,7 +37,7 @@ export class QuizAppComponent {
       this.correctAnswer = false;
       this.incorrectAnswer = false;
       this.loadNextQuestion();
-    }, 2500);
+    }, 2000);
   }
 
   restartQuiz() {

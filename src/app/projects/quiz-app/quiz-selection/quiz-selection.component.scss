@@ -1,0 +1,25 @@
+.container {
+  max-width: 641px;
+  margin-top: 15%;
+}
+
+h1 {
+  text-align: center;
+  cursor: pointer;
+}
+
+h3,
+p {
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 30%;
+}
+
+img {
+  width: 615px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

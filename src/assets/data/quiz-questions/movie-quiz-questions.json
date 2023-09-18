@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Wer hat den Oscar für den besten Hauptdarsteller im Jahr 2020 gewonnen?",
+    "options": [
+      "Leonardo DiCaprio",
+      "Joaquin Phoenix",
+      "Brad Pitt",
+      "Tom Hanks"
+    ],
+    "answer": "Joaquin Phoenix"
+  },
+  {
+    "question": "Welcher Film gewann den Oscar für den besten Film im Jahr 2021?",
+    "options": [
+      "Nomadland",
+      "The Father",
+      "Judas and the Black Messiah",
+      "Mank"
+    ],
+    "answer": "Nomadland"
+  },
+  {
+    "question": "Wer spielte die Hauptrolle in dem Film 'Forrest Gump'?",
+    "options": ["Tom Hanks", "Brad Pitt", "Leonardo DiCaprio", "Johnny Depp"],
+    "answer": "Tom Hanks"
+  },
+  {
+    "question": "In welchem Jahr wurde der erste 'Harry Potter' Film veröffentlicht?",
+    "options": ["2000", "2001", "2002", "2003"],
+    "answer": "2001"
+  },
+  {
+    "question": "Wer führte Regie bei 'Der Pate'?",
+    "options": [
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Steven Spielberg",
+      "George Lucas"
+    ],
+    "answer": "Francis Ford Coppola"
+  }
+]
