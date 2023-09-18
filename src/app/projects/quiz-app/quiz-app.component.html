@@ -1,12 +1,7 @@
 <div class="container">
   <h1 class="fw-light text-center mb-5">{{ title }}</h1>
 
-  <div class="mb-3">
-    <label for="quizTopic" class="form-label">Wählen Sie ein Quiz-Thema:</label>
-    <select class="form-select" id="quizTopic" [(ngModel)]="selectedQuizTopic">
-      <option *ngFor="let topic of quizTopics">{{ topic }}</option>
-    </select>
-  </div>
+  <app-quiz-topic-selector [(selectedTopic)]="selectedQuizTopic"></app-quiz-topic-selector>
 
   <div class="card">
     <div class="card-body">

@@ -19,7 +19,7 @@ import { ShoppingListComponent } from './projects/shopping-list/shopping-list.co
 import { KanbanBoardComponent } from './projects/kanban-board/kanban-board.component';
 import { AutosizeModule } from 'ngx-autosize';
 import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
-import { QuizSelectionComponent } from './projects/quiz-app/quiz-selection/quiz-selection.component';
+import { QuizTopicSelectorComponent } from './projects/quiz-app/quiz-topic-selector/quiz-topic-selector.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { QuizSelectionComponent } from './projects/quiz-app/quiz-selection/quiz-
     ShoppingListComponent,
     KanbanBoardComponent,
     QuizAppComponent,
-    QuizSelectionComponent,
+    QuizTopicSelectorComponent,
   ],
   imports: [
     BrowserModule,
