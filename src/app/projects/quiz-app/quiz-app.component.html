@@ -2,7 +2,7 @@
   <h1 class="fw-light text-center mb-5 pt-3">{{ title }}</h1>
 
   <div class="mb-3">
-    <label for="quizTopic" class="form-label">Wählen Sie ein Quiz-Thema:</label>
+    <label for="quizTopic" class="form-label">Wähle ein Quiz-Thema:</label>
     <select class="form-select" id="quizTopic" [(ngModel)]="selectedQuizTopic">
       <option *ngFor="let topic of quizTopics">{{ topic }}</option>
     </select>
@@ -41,9 +41,10 @@
           {{ option }}
         </div>
 
-        <button class="btn btn-warning mt-3" (click)="checkAnswer(userAnswer)">
+        <button class="btn btn-warning mt-3" [disabled]="!userAnswer" (click)="checkAnswer(userAnswer)">
           Antwort einreichen
         </button>
+
       </div>
 
       <div *ngIf="currentQuestionIndex >= questions.length">

@@ -1,25 +1,32 @@
-<form class="container">
-  <h1 class="fw-light text-center mt-5">Kontaktaufnahme</h1>
-  <div class="mb-3 mt-5">
-    <label for="inputName" class="form-label">Name</label>
-    <input type="text" class="form-control" id="inputName" />
+<div class="container">
+  <div class="card">
+    <form>
+      <h1 class="fw-light text-center mt-5">Kontakt</h1>
+      <div class="mb-3 mt-5">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" required />
+      </div>
+      <div class="mb-3">
+        <label for="inputCompany" class="form-label">Unternehmen</label>
+        <input type="text" class="form-control" id="inputCompany" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email-Addresse</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          required />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputMessage" class="form-label">Nachricht</label>
+        <textarea
+          class="form-control"
+          id="exampleInputMessage"
+          required></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning">Absenden</button>
+    </form>
   </div>
-  <div class="mb-3">
-    <label for="inputCompany" class="form-label">Unternehmen</label>
-    <input type="text" class="form-control" id="inputCompany" />
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email-Addresse</label>
-    <input
-      type="email"
-      class="form-control"
-      id="exampleInputEmail1"
-      aria-describedby="emailHelp" />
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputMessage" class="form-label">Nachricht</label>
-    <textarea class="form-control" id="exampleInputMessage"></textarea>
-  </div>
-  <div class="mb-3 form-check"></div>
-  <button type="submit" class="btn btn-dark">Absenden</button>
-</form>
+</div>
