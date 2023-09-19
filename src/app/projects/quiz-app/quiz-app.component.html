@@ -1,11 +1,21 @@
 <div class="container">
-  <h1 class="fw-light text-center mb-5">{{ title }}</h1>
+  <h1 class="fw-light text-center mb-5 pt-3">{{ title }}</h1>
 
-  <app-quiz-topic-selector [(selectedTopic)]="selectedQuizTopic"></app-quiz-topic-selector>
+  <div class="mb-3">
+    <label for="quizTopic" class="form-label">Wählen Sie ein Quiz-Thema:</label>
+    <select class="form-select" id="quizTopic" [(ngModel)]="selectedQuizTopic">
+      <option *ngFor="let topic of quizTopics">{{ topic }}</option>
+    </select>
+  </div>
 
   <div class="card">
     <div class="card-body">
-      <h5 class="fw-light">Punktestand: {{ score }}</h5>
+      <h5 class="fw-light">
+        Punktestand:
+        <b [ngStyle]="{ color: score > 0 ? 'green' : 'red' }">{{
+          score
+        }}</b>
+      </h5>
 
       <div *ngIf="currentQuestionIndex < questions.length">
         <h3 class="fw-light mb-3 mt-3">
@@ -18,7 +28,7 @@
           </div>
           <div class="alert alert-danger" *ngIf="incorrectAnswer">
             Antwort falsch! Die richtige Antwort ist:
-            {{ questions[currentQuestionIndex].answer }}
+            {{ questions[currentQuestionIndex]["answer"] }}
           </div>
         </div>
 
@@ -32,18 +42,18 @@
         </div>
 
         <button class="btn btn-warning mt-3" (click)="checkAnswer(userAnswer)">
-          Antwort einreichen</button>
-        <button class="btn btn-danger mt-3"  id="btn-danger" (click)="endQuiz()">
-          Quiz beenden
+          Antwort einreichen
         </button>
       </div>
 
       <div *ngIf="currentQuestionIndex >= questions.length">
         <p>Quiz beendet!</p>
-        <button class="btn btn-secondary" (click)="restartQuiz()">
+        <button class="btn btn-secondary mt-3" (click)="restartQuiz()">
           Quiz wiederholen
         </button>
-        <button class="btn btn-danger mt-3" (click)="endQuiz()">Quiz beenden</button>
+        <button class="btn btn-danger mt-3" (click)="endQuiz()">
+          Quiz beenden
+        </button>
       </div>
     </div>
   </div>

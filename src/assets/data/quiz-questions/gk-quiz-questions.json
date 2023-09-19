@@ -96,8 +96,8 @@
   },
   {
     "question": "Was ist das am häufigsten gesprochene Sprache der Welt?",
-    "options": ["Marcel Neumann", "Heidi Klum", "Peter Pan", "Mickey Mouse"],
-    "answer": "Mandarin Chinesisch"
+    "options": ["Englisch", "Mandarin-Chinesisch", "Hindi", "Spanisch"],
+    "answer": "Mandarin-Chinesisch"
   },
   {
     "question": "Was ist die Hauptstadt von Deutschland?",

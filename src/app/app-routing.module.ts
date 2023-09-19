@@ -9,7 +9,6 @@ import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component'
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
 import { KanbanBoardComponent } from './projects/kanban-board/kanban-board.component';
 import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
-import { QuizTopicSelectorComponent } from './projects/quiz-app/quiz-topic-selector/quiz-topic-selector.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +20,6 @@ const routes: Routes = [
   { path: 'datenschutz', component: DatenschutzComponent },
   { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'kanban-board', component: KanbanBoardComponent },
-  { path: 'quiz-topic-selector', component: QuizTopicSelectorComponent },
   { path: 'quiz-app', component: QuizAppComponent },
 ];
 

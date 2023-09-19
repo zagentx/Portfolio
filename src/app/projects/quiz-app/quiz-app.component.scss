@@ -1,6 +1,16 @@
 .container {
   max-width: 700px;
+  height: 575px;
   margin-top: 15%;
+  border-radius: 15px;
+  background-image: url("/assets/img/quiz-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+label {
+  color: whitesmoke;
 }
 
 .card {
@@ -11,6 +21,7 @@
   padding: 10px;
 }
 
-#btn-danger {
+.btn-danger,
+.btn-outline-secondary {
   margin-left: 5px;
 }
