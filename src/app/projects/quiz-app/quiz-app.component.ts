@@ -44,6 +44,7 @@ export class QuizAppComponent {
   set selectedQuizTopic(value) {
     this._selectedQuizTopic = value;
     this.questions = this.getQuestions();
+    this.restartQuiz();
   }
 
   loadNextQuestion() {
