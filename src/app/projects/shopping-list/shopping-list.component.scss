@@ -1,7 +1,8 @@
 .container {
   max-width: 710px;
   margin-top: 15%;
-  height: 510px;
+  height: 480px;
+  max-height: 490px;
   border-radius: 15px;
   background-image: url("/assets/img/quiz-bg.png");
   background-repeat: no-repeat;
@@ -9,11 +10,14 @@
 }
 
 .input-card {
-  max-height: 81px;
+  height: 55px;
   padding: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .output-card {
@@ -52,7 +56,7 @@ ul {
 }
 
 #item-input {
-  width: 80%;
+  width: 105%;
   outline: 0;
   background: #f9f9f9;
   font-size: 1.1rem;
@@ -70,10 +74,10 @@ ul {
 }
 
 #item-output {
-  width: 80%;
-
+  width: 105%;
   font-size: 1.1rem;
   background: #f9f9f9;
+  text-decoration: underline;
 }
 
 #amount-output {
@@ -93,9 +97,9 @@ ul {
 }
 
 //test
-tr:nth-child(even) {
-  background-color: lightgray;
-}
-tr:nth-child(odd) {
-  background-color: white;
-}
+//tr:nth-child(even) {
+//  background-color: lightgray;
+//}
+//tr:nth-child(odd) {
+//  background-color: white;
+//}
