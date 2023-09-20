@@ -1,4 +1,27 @@
 .container {
   max-width: 700px;
+  height: 610px;
   margin-top: 15%;
+  border-radius: 15px;
+  background-image: url("/assets/img/quiz-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+label {
+  color: whitesmoke;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn-danger,
+.btn-outline-secondary {
+  margin-left: 5px;
 }

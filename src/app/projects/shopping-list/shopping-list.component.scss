@@ -1,14 +1,48 @@
 .container {
-  max-width: 700px;
+  max-width: 710px;
   margin-top: 15%;
+  height: 480px;
+  max-height: 490px;
+  border-radius: 15px;
+  background-image: url("/assets/img/quiz-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
+.input-card {
+  height: 55px;
   padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.output-card {
+  max-height: 227px;
+  padding: 10px;
+  border-radius: unset;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+.output-card::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.output-card::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.output-card::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1 {
+  color: whitesmoke;
 }
 
 hr {
@@ -22,35 +56,50 @@ ul {
 }
 
 #item-input {
-  width: 80%;
-  border: 0;
-  border-radius: 5px;
+  width: 105%;
   outline: 0;
   background: #f9f9f9;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid black;
 }
 
 #amount-input {
-  width: 65%;
-  border: 0;
-  border-radius: 5px;
+  width: 90px;
   outline: 0;
   background: #f9f9f9;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid black;
 }
 
 #item-output {
-  font-size: 1.2rem;
+  width: 105%;
+  font-size: 1.1rem;
   background: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 
 #amount-output {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.icon-card {
+  max-height: 35px;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//test
+//tr:nth-child(even) {
+//  background-color: lightgray;
+//}
+//tr:nth-child(odd) {
+//  background-color: white;
+//}
