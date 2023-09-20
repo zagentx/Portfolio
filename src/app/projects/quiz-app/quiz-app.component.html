@@ -1,15 +1,61 @@
 <div class="container">
-  <h1 class="fw-light">Quiz-App</h1>
+  <h1 class="fw-light text-center mb-5 pt-3">{{ title }}</h1>
 
-  <h1>{{ title }}</h1>
-  <p>Punktestand: {{ score }}</p>
-  <div *ngIf="currentQuestionIndex < questions.length">
-    <p>{{ questions[currentQuestionIndex].question }}</p>
-    <input #userAnswer type="text">
-    <button (click)="checkAnswer(userAnswer.value)">Antwort einreichen</button>
-  </div>
-  <div *ngIf="currentQuestionIndex >= questions.length">
-    <p>Quiz beendet!</p>
+  <div class="topic-box mb-3">
+    <label for="quizTopic" class="form-label">Wähle ein Quiz-Thema:</label>
+    <select class="form-select" id="quizTopic" [(ngModel)]="selectedQuizTopic">
+      <option *ngFor="let topic of quizTopics">{{ topic }}</option>
+    </select>
   </div>
 
+  <div class="card">
+    <div class="card-body">
+      <h5 class="fw-light">
+        Punktestand:
+        <b [ngStyle]="{ color: score > 0 ? 'green' : 'red' }">{{
+          score
+        }}</b>
+      </h5>
+
+      <div *ngIf="currentQuestionIndex < questions.length">
+        <h3 class="fw-light mb-3 mt-3">
+          {{ questions[currentQuestionIndex].question }}
+        </h3>
+
+        <div *ngIf="currentQuestionIndex < questions.length">
+          <div class="alert alert-success" *ngIf="correctAnswer">
+            Antwort richtig!
+          </div>
+          <div class="alert alert-danger" *ngIf="incorrectAnswer">
+            Antwort falsch! Die richtige Antwort ist:
+            {{ questions[currentQuestionIndex]["answer"] }}
+          </div>
+        </div>
+
+        <div *ngFor="let option of questions[currentQuestionIndex].options">
+          <input
+            type="radio"
+            name="option"
+            value="{{ option }}"
+            [(ngModel)]="userAnswer" />
+          {{ option }}
+        </div>
+
+        <button class="btn btn-warning mt-3" [disabled]="!userAnswer" (click)="checkAnswer(userAnswer)">
+          Antwort einreichen
+        </button>
+
+      </div>
+
+      <div *ngIf="currentQuestionIndex >= questions.length">
+        <p>Quiz beendet!</p>
+        <button class="btn btn-secondary mt-3" (click)="restartQuiz()">
+          Quiz wiederholen
+        </button>
+        <button class="btn btn-danger mt-3" (click)="endQuiz()">
+          Quiz beenden
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

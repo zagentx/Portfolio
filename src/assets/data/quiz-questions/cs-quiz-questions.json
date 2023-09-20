@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Welches Unternehmen hat das Betriebssystem Windows entwickelt?",
+    "options": ["Apple", "IBM", "Microsoft", "Google"],
+    "answer": "Microsoft"
+  },
+  {
+    "question": "Was ist der Name des ersten kommerziell erfolgreichen Videospiels?",
+    "options": ["Space Invaders", "Pong", "Pac-Man", "Tetris"],
+    "answer": "Pong"
+  },
+  {
+    "question": "Was bedeutet die Abkürzung 'URL' im Kontext des Internets?",
+    "options": [
+      "Unified Resource Locator",
+      "Uniform Resource Locator",
+      "Unified Retrieval Language",
+      "Universal Retrieval Language"
+    ],
+    "answer": "Uniform Resource Locator"
+  },
+  {
+    "question": "Welche Programmiersprache wurde zuerst entwickelt?",
+    "options": ["C", "Python", "Fortran", "Java"],
+    "answer": "Fortran"
+  }
+]
