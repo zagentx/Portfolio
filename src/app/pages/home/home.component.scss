@@ -14,8 +14,21 @@ hr {
   margin-left: 15%;
 }
 
+.html {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.css {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.angular {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .ts {
   margin-top: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .stackIcons {
@@ -24,6 +37,7 @@ hr {
   max-width: 300px;
   margin: 30px auto;
   padding: 10px 0;
+
 }
 
 .html:hover,
