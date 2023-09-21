@@ -5,6 +5,12 @@
 
 @import "bootstrap/scss/bootstrap";
 
+//body {
+//  background-color: #F1EFEF !important;
+//}
+
 body {
-  background-color: #F1EFEF !important;
+  background-image: url("assets/img/büro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
