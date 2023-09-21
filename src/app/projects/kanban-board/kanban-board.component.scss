@@ -1,7 +1,11 @@
 .container {
-  width: 100%;
+  max-width: fit-content;
   margin-top: 15%;
   margin-bottom: 10%;
+  border-radius: 15px;
+  background-image: url("/assets/img/quiz-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 768px) {
@@ -12,7 +16,9 @@
 
 h1 {
   margin-bottom: 30px;
+  padding-top: 20px;
   text-align: center;
+  color: whitesmoke;
 }
 
 h4 {
@@ -56,9 +62,9 @@ h4 {
   max-width: 305px;
   min-width: 305px;
   padding: 10px;
-  margin: 5px;
+  margin: 20px 5px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f3f3f3;
 }
 
 .task-card {
@@ -136,8 +142,6 @@ h4 {
   transform: scale(1.2);
 }
 
-
-
 #move-l {
   margin-left: 10px;
 }
@@ -159,7 +163,7 @@ h4 {
   color: dodgerblue;
 }
 
-.add-column{
+.add-column {
   margin-left: 5px;
   position: relative;
   top: 35px;
