@@ -25,3 +25,17 @@ label {
 .btn-outline-secondary {
   margin-left: 5px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#kb-btn,
+#sl-btn {
+  margin-right: 3px;
+  border-color: lightgray;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
