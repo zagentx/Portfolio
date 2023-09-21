@@ -14,8 +14,21 @@ hr {
   margin-left: 15%;
 }
 
+.html {
+  filter: drop-shadow(0 4px 6px #555);
+}
+
+.css {
+  filter: drop-shadow(0 4px 6px #555);
+}
+
+.angular {
+  filter: drop-shadow(0 4px 6px #555);
+}
+
 .ts {
   margin-top: 5px;
+  filter: drop-shadow(0 4px 6px #555);
 }
 
 .stackIcons {
