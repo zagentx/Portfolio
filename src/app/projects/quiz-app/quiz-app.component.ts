@@ -63,11 +63,11 @@ export class QuizAppComponent {
       this.incorrectAnswer = true;
     }
 
-    setTimeout(() => {
-      this.correctAnswer = false;
-      this.incorrectAnswer = false;
-      this.loadNextQuestion();
-    }, 2000);
+    // setTimeout(() => {
+    //   this.correctAnswer = false;
+    //   this.incorrectAnswer = false;
+    //   this.loadNextQuestion();
+    // }, 2000);
   }
 
   restartQuiz() {
