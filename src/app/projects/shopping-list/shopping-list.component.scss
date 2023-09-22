@@ -1,32 +1,45 @@
 .container {
   max-width: 710px;
-  margin-top: 15%;
+  margin-top: 55px;
   height: 480px;
   max-height: 490px;
   border-radius: 15px;
-  background-image: url("/assets/img/quiz-bg.png");
+  background-image: url("/assets/img/shoppinglist.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .input-card {
   height: 55px;
-  padding: 10px;
+  //padding: 10px;
+  padding-top: 260px;
+  padding-left: 10px;
+  margin-left: 130px;
+  //border: 1px solid black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: white;
+  //background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .output-card {
-  max-height: 227px;
+  margin-top: 25px;
+  margin-left: 100px;
+  max-height: 220px;
   padding: 10px;
   border-radius: unset;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: white;
+}
+
+.output-card::-webkit-scrollbar {
+  width: 10px;
+}
+
+.output-card::-webkit-scrollbar-button {
+  color: #59702f;
 }
 
 .output-card::-webkit-scrollbar-track {
@@ -34,15 +47,17 @@
 }
 
 .output-card::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #c9e265;
 }
 
 .output-card::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #59702f;
 }
 
-h1 {
-  color: whitesmoke;
+h3 {
+  color: #59702f;
+  text-align: center;
+  margin-right: 100px;
 }
 
 hr {
@@ -58,42 +73,76 @@ ul {
 #item-input {
   width: 105%;
   outline: 0;
-  background: #f9f9f9;
+  background: #c9e265;
   font-size: 1.1rem;
   border: none;
-  border-bottom: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#bag-plus {
+  //color: #c9e265;
+  color: black;
+  margin-left: 25px;
 }
 
 #amount-input {
   width: 90px;
   outline: 0;
-  background: #f9f9f9;
+  background: #c9e265;
   font-size: 1.1rem;
   border: none;
-  border-bottom: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
 }
 
 #item-output {
   width: 105%;
   font-size: 1.1rem;
-  background: #f9f9f9;
-  text-decoration: underline;
+  border-radius: 5px;
+  background: #c9e265;
+  text-align: center;
+  color: #363535;
 }
 
 #amount-output {
+  width: 90px;
   font-size: 1.1rem;
-  background: #f9f9f9;
+  border-radius: 5px;
+  background: #c9e265;
+  text-align: center;
+  color: #363535;
+}
+
+#pencil {
+  margin-left: 25px;
 }
 
 .icon-card {
   max-height: 35px;
   padding: 10px;
+  margin-top: 25px;
+  //border: 1px solid black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: white;
+  //background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#kb-btn,
+#qa-btn {
+  margin-right: 3px;
+  border-color: lightgray;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 //test
