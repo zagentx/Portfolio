@@ -1,7 +1,7 @@
 <div class="container">
-  <h1 class="fw-light mb-5 pt-3">Shopping-List</h1>
+<!--  <h1 class="fw-light mb-5 pt-5">Shopping-List</h1>-->
 
-  <div class="input-card mb-3">
+  <div class="input-card">
     <div class="card-body">
       <div class="row">
         <div class="row py-3">
@@ -29,7 +29,7 @@
           <div class="col-2">
             <i
               *ngIf="newItemName"
-              class="bi bi-bag-plus px-0"
+              class="bi bi-bag-plus px-0" id="bag-plus"
               style="font-size: 1.1rem"
               (click)="addItem()">
             </i>
@@ -42,7 +42,7 @@
   <div class="output-card">
     <div class="card-body">
 
-      <h3 class="card-title fw-light py-3"><b>Einkaufsliste</b></h3>
+      <h3 class="card-title fw-light"><b>Deine Einkaufsliste</b></h3>
 
       <div class="row py-3">
         <div class="col-5">
@@ -66,11 +66,11 @@
             <li *ngFor="let item of items; let i = index">
               <i
                 *ngIf="!editMode"
-                class="bi bi-pencil"
+                class="bi bi-pencil" id="pencil"
                 style="font-size: 1.1rem"
                 (click)="editItem(i)"></i>
               <i
-                class="bi bi-bag-dash px-3"
+                class="bi bi-bag-dash px-3" id="bag-dash"
                 style="font-size: 1.1rem"
                 (click)="deleteItem(i)"></i>
             </li>
@@ -80,7 +80,7 @@
     </div>
   </div>
 
-  <div class="icon-card mt-3">
+  <div class="icon-card">
     <div class="row text-center">
       <div class="col">
         <i
@@ -94,6 +94,17 @@
   </div>
 
 </div>
+
+<div class="button-container">
+  <button class="btn btn-outline-dark" id="kb-btn" routerLink="/kanban-board">
+    Kanban-Board
+  </button>
+  <button class="btn btn-outline-dark" id="qa-btn" routerLink="/quiz-app">
+    Quiz-App
+  </button>
+</div>
+
+
 
 <!--test-->
 <!--<table>-->
