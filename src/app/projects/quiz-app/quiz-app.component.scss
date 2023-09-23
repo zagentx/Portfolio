@@ -1,9 +1,9 @@
 .container {
-  max-width: 700px;
-  height: 600px;
-  max-height: 600px;
+  max-width: 750px;
+  height: 670px;
   min-height: 500px;
   margin-top: 100px;
+  padding: 20px;
   border-radius: 15px;
   background-image: url("/assets/img/quiz-bg.png");
   background-repeat: no-repeat;
@@ -42,7 +42,8 @@ h1 {
 
 #kb-btn,
 #sl-btn {
-  margin-right: 3px;
-  border-color: lightgray;
+  margin-right: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+

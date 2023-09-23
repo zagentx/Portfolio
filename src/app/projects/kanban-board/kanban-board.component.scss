@@ -1,8 +1,8 @@
 .container {
   max-width: fit-content;
-  margin-top: 15%;
+  margin-top: 110px;
   border-radius: 15px;
-  background-image: url("/assets/img/quiz-bg.png");
+  background-image: url("/assets/img/kb-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -188,7 +188,6 @@ h4 {
 
 #sl-btn,
 #qa-btn {
-  margin-right: 3px;
-  border-color: lightgray;
+  margin-right: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
