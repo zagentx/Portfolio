@@ -13,7 +13,13 @@
 
 .card {
   margin-top: 100px;
+  border: 5px solid #23272e;
   border-radius: 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 h1 {
@@ -23,6 +29,10 @@ h1 {
 
 p {
   color: #23272e;
+}
+
+#contact-btn {
+  border-radius: 15px;
 }
 
 //.container {
