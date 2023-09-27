@@ -1,5 +1,5 @@
 .container {
-  max-width: 750px;
+  max-width: 700px;
   height: 670px;
   min-height: 500px;
   margin-top: 100px;
@@ -8,6 +8,11 @@
   background-image: url("/assets/img/quiz-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
 }
 
 h1,
@@ -37,7 +42,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 #kb-btn,
@@ -45,5 +50,3 @@ h1 {
   margin-right: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-

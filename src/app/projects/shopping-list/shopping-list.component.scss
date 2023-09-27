@@ -6,6 +6,11 @@
   background-image: url("/assets/img/shoppinglist.png");
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
 }
 
 .input-card {
@@ -162,8 +167,8 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.button-container {
-  margin-top: 10px;
+.btn-container {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
