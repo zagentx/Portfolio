@@ -84,12 +84,13 @@ ul {
 
 #item-input {
   width: 200px;
+  padding-left: 5px;
   outline: 0;
   color: #59702f;
   font-size: 1.3rem;
   border: 1px solid rgba(89, 112, 47, 0.5);
   border-radius: 5px;
-  text-align: center;
+  text-align: start;
 }
 
 #bag-plus {
@@ -110,31 +111,33 @@ ul {
 #amount-input {
   color: #59702f;
   width: 80px;
+  padding-left: 5px;
   outline: 0;
   font-size: 1.3rem;
   border: 1px solid rgba(89, 112, 47, 0.5);
-
   border-radius: 5px;
-  text-align: center;
+  text-align: start;
 }
 
 #item-output {
   color: #59702f;
   width: 200px;
+  padding-left: 5px;
   font-size: 1.3rem;
   border-radius: 5px;
   background: #c9e265;
-  text-align: center;
+  text-align: start;
   border: 1px solid rgba(89, 112, 47, 0.5);
 }
 
 #amount-output {
   width: 80px;
+  padding-left: 5px;
   color: #59702f;
   font-size: 1.3rem;
   border-radius: 5px;
   background: #c9e265;
-  text-align: center;
+  text-align: start;
   border: 1px solid rgba(89, 112, 47, 0.5);
 }
 
