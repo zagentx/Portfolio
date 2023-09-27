@@ -31,7 +31,7 @@ hr {
   filter: drop-shadow(0 4px 6px #555);
 }
 
-.stackIcons {
+.stackIcon-box {
   display: flex;
   justify-content: space-between;
   max-width: 300px;
@@ -39,12 +39,18 @@ hr {
   padding: 10px 0;
 }
 
+.html,
+.css,
+.ts,
+.angular {
+  transition: transform 0.5s;
+}
+
 .html:hover,
 .css:hover,
 .ts:hover,
 .angular:hover {
   transform: scale(1.15);
-  transition: 0.5s;
 }
 
 .card {
