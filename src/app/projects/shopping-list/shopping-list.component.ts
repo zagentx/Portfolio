@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 interface Item {
   name: string;
   quantity: number;
@@ -18,7 +19,8 @@ export class ShoppingListComponent implements OnInit {
   editMode = false;
   editIndex: number | null = null;
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.loadItems();
@@ -88,5 +90,9 @@ export class ShoppingListComponent implements OnInit {
 
     this.items = [];
     this.saveItems();
+  }
+
+  openModal() {
+
   }
 }
