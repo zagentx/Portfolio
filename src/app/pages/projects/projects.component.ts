@@ -11,7 +11,15 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onCardClick() {
+  onCardClickSl() {
     this.router.navigate(['/shopping-list']);
+  }
+
+  onCardClickKb() {
+    this.router.navigate(['/kanban-board']);
+  }
+
+  onCardClickQa() {
+    this.router.navigate(['/quiz-app']);
   }
 }
