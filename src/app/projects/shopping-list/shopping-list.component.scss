@@ -22,7 +22,7 @@
 .output-card {
   margin-top: 25px;
   margin-left: 100px;
-  max-height: 220px;
+  max-height: 200px;
   padding: 10px;
   border-radius: unset;
   overflow-x: hidden;
@@ -124,7 +124,6 @@ ul {
   background: #c9e265;
   text-align: center;
   border: 1px solid rgba(89, 112, 47, 0.5);
-
 }
 
 #amount-output {
@@ -171,9 +170,17 @@ ul {
 }
 
 @-webkit-keyframes pulsate {
-  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-  50% {opacity: 1.0;}
-  100% {-webkit-transform: scale(3.2, 3.2); opacity: 0.0;}
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(3.2, 3.2);
+    opacity: 0;
+  }
 }
 
 //test
