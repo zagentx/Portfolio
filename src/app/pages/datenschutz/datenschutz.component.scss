@@ -1,6 +1,6 @@
 .container {
   max-width: 700px;
-  margin-top: 55px;
+  margin-top: 5px;
   margin-bottom: 10%;
   text-align: center;
 }
@@ -11,14 +11,16 @@
   }
 }
 
-//#link {
-//  text-decoration: none;
-//}
-//
-//#link:hover {
-//  color: orange !important;
-//  text-decoration: none;
-//}
+.card {
+  margin-top: 100px;
+  border: 5px solid #23272e;
+  border-radius: 40px;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
 
 a {
   color: #6c757d;
@@ -30,8 +32,8 @@ a:hover {
   color: orange;
 }
 
-li {
-  list-style-type: none;
-  font-weight: bold;
-  color: #6c757d;
+#contact-btn {
+  margin-left: 460px;
+  margin-top: -155px;
+  border-radius: 15px;
 }
