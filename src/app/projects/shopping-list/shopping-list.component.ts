@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 interface Item {
   name: string;
   quantity: number;
@@ -19,8 +18,10 @@ export class ShoppingListComponent implements OnInit {
   editMode = false;
   editIndex: number | null = null;
 
-  constructor() {
-  }
+  isModalVisible = false;
+  isBlured = false;
+
+  constructor() {}
 
   ngOnInit(): void {
     this.loadItems();
@@ -93,6 +94,11 @@ export class ShoppingListComponent implements OnInit {
   }
 
   openModal() {
+    this.isModalVisible = true;
+  }
 
+  closeModal() {
+    this.isModalVisible = false;
+    this.isBlured = false;
   }
 }

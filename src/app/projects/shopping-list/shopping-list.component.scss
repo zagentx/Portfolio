@@ -9,6 +9,19 @@
   transition: 0.5s;
 }
 
+.container-blur {
+  width: 620px;
+  height: 605px;
+  margin-top: 100px;
+  margin-left: 245px;
+  border-radius: 15px;
+  background-image: url("/assets/img/shoppinglist.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  filter: blur(10px);
+}
+
 .container:hover {
   transform: scale(1.05);
 }
@@ -204,4 +217,25 @@ ul {
     -webkit-transform: scale(3.2, 3.2);
     opacity: 0;
   }
+}
+
+#modal {
+  position: relative;
+  border: 5px solid grey;
+  border-radius: 15px;
+  left: 350px;
+  bottom: 500px;
+  transition: 0.5s;
+}
+
+#modal:hover {
+  transform: scale(1.05);
+}
+
+#modal h5 {
+  color: #59702f;
+}
+
+#close-modal {
+  margin-left: 135px;
 }
