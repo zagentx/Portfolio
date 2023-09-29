@@ -1,12 +1,12 @@
 <div class="container">
   <div class="text-center">
-    <h1 class="fw-light">Projekte</h1>
+    <h1 class="fw-light pt-5">Projekte</h1>
     <p class="lead text-muted">Eine aktuelle Übersicht meiner Projekte</p>
   </div>
 
   <div class="row">
     <div class="col">
-      <div class="card">
+      <div class="card"  (click)="onCardClickSl()">
         <div class="card-body">
           <img
             src="../../../assets/img/shopping.jpg"
@@ -24,7 +24,7 @@
 
   <div class="row">
     <div class="col">
-      <div class="card">
+      <div class="card" (click)="onCardClickKb()">
         <div class="card-body">
           <img
             src="../../../assets/img/kanban.jpg"
@@ -42,7 +42,7 @@
 
   <div class="row">
     <div class="col">
-      <div class="card">
+      <div class="card" (click)="onCardClickQa()">
         <div class="card-body">
           <img
             src="../../../assets/img/quiz.png"
@@ -55,4 +55,7 @@
       </div>
     </div>
   </div>
+  <button class="btn btn-outline-light" id="contact-btn" routerLink="/contact">
+    Jetzt Kontakt aufnehmen
+  </button>
 </div>

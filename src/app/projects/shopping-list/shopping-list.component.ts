@@ -18,6 +18,9 @@ export class ShoppingListComponent implements OnInit {
   editMode = false;
   editIndex: number | null = null;
 
+  isModalOpen = false;
+  isBlurred = false;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -88,5 +91,18 @@ export class ShoppingListComponent implements OnInit {
 
     this.items = [];
     this.saveItems();
+  }
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+    this.isBlurred = false;
+  }
+
+  blurreContaner() {
+    this.isBlurred = !this.isBlurred;
   }
 }
