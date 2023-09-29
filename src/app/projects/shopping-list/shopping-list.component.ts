@@ -18,8 +18,8 @@ export class ShoppingListComponent implements OnInit {
   editMode = false;
   editIndex: number | null = null;
 
-  isModalVisible = false;
-  isBlured = false;
+  isModalOpen = false;
+  isBlurred = false;
 
   constructor() {}
 
@@ -94,11 +94,15 @@ export class ShoppingListComponent implements OnInit {
   }
 
   openModal() {
-    this.isModalVisible = true;
+    this.isModalOpen = true;
   }
 
   closeModal() {
-    this.isModalVisible = false;
-    this.isBlured = false;
+    this.isModalOpen = false;
+    this.isBlurred = false;
+  }
+
+  blurreContaner() {
+    this.isBlurred = !this.isBlurred;
   }
 }
