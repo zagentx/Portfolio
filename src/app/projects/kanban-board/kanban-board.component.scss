@@ -1,10 +1,15 @@
 .container {
   max-width: fit-content;
-  margin-top: 15%;
+  margin-top: 110px;
   border-radius: 15px;
-  background-image: url("/assets/img/quiz-bg.png");
+  background-image: url("/assets/img/kb-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 768px) {
@@ -14,8 +19,7 @@
 }
 
 h1 {
-  margin-bottom: 30px;
-  padding-top: 20px;
+  padding-top: 35px;
   text-align: center;
   color: whitesmoke;
 }
@@ -60,8 +64,9 @@ h4 {
 .column {
   max-width: 305px;
   min-width: 305px;
-  padding: 10px;
-  margin: 20px 5px;
+  padding: 15px;
+  margin-bottom: 35px;
+  margin-left: 10px;
   border-radius: 10px;
   background-color: #f3f3f3;
 }
@@ -183,12 +188,11 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 #sl-btn,
 #qa-btn {
-  margin-right: 3px;
-  border-color: lightgray;
+  margin-right: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }

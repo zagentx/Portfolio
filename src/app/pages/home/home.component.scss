@@ -1,15 +1,15 @@
 .container {
   max-width: 700px;
-  margin-top: 15%;
+  margin-top: 55px;
 }
 
 h3 {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 hr {
   max-width: 700px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-right: 15%;
   margin-left: 15%;
 }
@@ -31,7 +31,7 @@ hr {
   filter: drop-shadow(0 4px 6px #555);
 }
 
-.stackIcons {
+.stackIcon-box {
   display: flex;
   justify-content: space-between;
   max-width: 300px;
@@ -39,17 +39,24 @@ hr {
   padding: 10px 0;
 }
 
+.html,
+.css,
+.ts,
+.angular {
+  transition: transform 0.5s;
+}
+
 .html:hover,
 .css:hover,
 .ts:hover,
 .angular:hover {
   transform: scale(1.15);
-  transition: 0.5s;
 }
 
 .card {
   margin-top: 5%;
   text-align: left;
+  border: 5px solid #23272e;
 }
 
 .card:hover {
@@ -67,4 +74,5 @@ hr {
 
 #contact-btn {
   margin-left: 35%;
+  border-radius: 15px;
 }

@@ -1,10 +1,17 @@
 .container {
-  max-width: 700px;
-  margin-top: 15%;
-  border-radius: 15px;
-  background-image: url("/assets/img/quiz-bg.png");
+  max-width: 500px;
+  margin-top: 140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 40px;
+  background-color: #23272e;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 768px) {
@@ -16,4 +23,10 @@
 h1,
 label {
   color: whitesmoke;
+}
+
+#submit-btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 15px;
 }

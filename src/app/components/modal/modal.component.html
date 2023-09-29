@@ -1,0 +1,17 @@
+<!--Modal test-->
+<div *ngIf="isModalVisible" id="modal" class="card" style="width: 25rem">
+  <div class="card-body">
+    <h5 class="card-title mb-3">Info</h5>
+    <h6 class="card-subtitle mb-3 text-body-secondary">
+      Die Shopping-List-App ist noch nicht vollständig implementiert!
+      Folgende Punkte werden demnächt umgesetzt:
+    </h6>
+    <ol>
+      <li>Download und Share Icons sind noch inaktiv</li>
+      <li>Mehrere Designs zur Auswahl machen</li>
+      <li>Das Bearbeiten in der Liste ermöglichen</li>
+    </ol>
+    <button class="btn btn-secondary mt-3" (click)="closeModal()">Schließen</button>
+  </div>
+</div>
+<!--Modal test-->
