@@ -24,7 +24,8 @@
         möglich.
       </p>
 
-      <button *ngIf="!isTextHide"
+      <button
+        *ngIf="!isTextHide"
         class="btn btn-outline-dark"
         (click)="readMore()"
         id="read-more-btn">
@@ -481,7 +482,7 @@
       </div>
     </div>
   </div>
+  <button class="btn btn-outline-light" id="contact-btn" routerLink="/contact">
+    Jetzt Kontakt aufnehmen
+  </button>
 </div>
-<button class="btn btn-outline-light" id="contact-btn" routerLink="/contact">
-  Jetzt Kontakt aufnehmen
-</button>
