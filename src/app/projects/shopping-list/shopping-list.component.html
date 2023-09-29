@@ -1,7 +1,6 @@
 <div
-  [class.container]="!isBlured"
-  [class.container-blur]="isBlured"
-  (click)="isBlured = !isBlured"
+  [class.container]="!isBlurred"
+  [class.container-blur]="isBlurred"
   class="container">
   <h1 class="">SHOPPING</h1>
   <h3 class="" id="h3-list">LIST</h3>
@@ -98,7 +97,7 @@
           class="bi bi-info-circle"
           id="info"
           style="font-size: 1.3rem"
-          (click)="openModal()">
+          (click)="openModal(); blurreContaner()">
         </i>
       </div>
     </div>
@@ -117,7 +116,7 @@
 <!--<app-modal></app-modal>-->
 
 <!--Modal test-->
-<div *ngIf="isModalVisible" id="modal" class="card" style="width: 25rem">
+<div *ngIf="isModalOpen" id="modal" class="card" style="width: 25rem">
   <div class="card-body">
     <h5 class="card-title mb-3">Info</h5>
     <h6 class="card-subtitle mb-3 text-body-secondary">
