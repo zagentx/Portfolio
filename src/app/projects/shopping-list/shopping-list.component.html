@@ -1,57 +1,50 @@
-<div
-  [class.container]="!isBlurred"
-  [class.container-blur]="isBlurred"
-  class="container">
-  <h1 class="">SHOPPING</h1>
-  <h3 class="" id="h3-list">LIST</h3>
+<div class="container">
+  <div
+    [class.main-card]="!isBlurred"
+    [class.main-card-blur]="isBlurred"
+    class="card"
+    id="main-card">
+    <h1 class="">SHOPPING</h1>
+    <h3 class="" id="h3-list">LIST</h3>
 
-  <div class="input-card">
-    <div class="card-body">
-      <div class="row">
-        <div class="row">
-          <div class="col-5">
-            <input
-              [(ngModel)]="newItemName"
-              type="text"
-              id="item-input"
-              (keyup.enter)="addItem()"
-              autofocus
-              maxlength="30"
-              placeholder="Artikel" />
-          </div>
+    <div class="list-box">
+      <div class="row" id="input-row">
+        <div class="col-5">
+          <input
+            [(ngModel)]="newItemName"
+            type="text"
+            id="item-input"
+            (keyup.enter)="addItem()"
+            autofocus
+            maxlength="30"
+            placeholder="Artikel" />
+        </div>
 
-          <div class="col-2">
-            <input
-              [(ngModel)]="newItemQuantity"
-              type="number"
-              min="0"
-              id="amount-input"
-              placeholder="Stk"
-              (keyup.enter)="newItemName && addItem()" />
-          </div>
+        <div class="col-2">
+          <input
+            [(ngModel)]="newItemQuantity"
+            type="number"
+            min="0"
+            id="amount-input"
+            placeholder="Stk"
+            (keyup.enter)="newItemName && addItem()" />
+        </div>
 
-          <div class="col-2">
-            <i
-              *ngIf="newItemName"
-              class="bi bi-bag-plus px-0"
-              id="bag-plus"
-              style="font-size: 1.3rem"
-              (click)="addItem()">
-            </i>
-          </div>
+        <div class="col-2">
+          <i
+            *ngIf="newItemName"
+            class="bi bi-bag-plus px-0"
+            id="bag-plus"
+            style="font-size: 1.3rem"
+            (click)="addItem()">
+          </i>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="output-card">
-    <div class="card-body">
-      <div class="row">
+      <div class="row" id="output-row">
         <div class="col-5">
           <ul id="item-output">
-            <li *ngFor="let item of items">
-              {{ item.name }}
-            </li>
+            <li *ngFor="let item of items">{{ item.name }}</li>
           </ul>
         </div>
 
@@ -82,10 +75,8 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="icon-card">
-    <div class="row text-center">
+    <div class="row text-center" id="icon-row">
       <div class="col">
         <i
           class="bi bi-trash3 px-3"
@@ -102,35 +93,39 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="btn-container">
-  <button class="btn btn-outline-light" id="kb-btn" routerLink="/kanban-board">
-    Kanban-Board
-  </button>
-  <button class="btn btn-outline-light" id="qa-btn" routerLink="/quiz-app">
-    Quiz-App
-  </button>
-</div>
-
-<!--<app-modal></app-modal>-->
-
-<!--Modal test-->
-<div *ngIf="isModalOpen" id="modal" class="card" style="width: 25rem">
-  <div class="card-body">
-    <h5 class="card-title mb-3">Info</h5>
-    <h6 class="card-subtitle mb-3 text-body-secondary">
-      Die Shopping-List-App ist noch nicht vollständig implementiert! Folgende
-      Punkte werden demnächst umgesetzt:
-    </h6>
-    <ol>
-      <li>Download und Share Icons sind noch inaktiv</li>
-      <li>Mehrere Designs zur Auswahl machen</li>
-      <li>Das Bearbeiten in der Liste ermöglichen</li>
-    </ol>
-    <button class="btn btn-secondary btn-sm mt-3" id="close-modal" (click)="closeModal()">
-      Schließen
+  <div class="btn-row">
+    <button
+      class="btn btn-outline-light"
+      id="kb-btn"
+      routerLink="/kanban-board">
+      Kanban-Board
+    </button>
+    <button class="btn btn-outline-light" id="qa-btn" routerLink="/quiz-app">
+      Quiz-App
     </button>
   </div>
+
+  <!-- Modal -->
+  <div *ngIf="isModalOpen" id="modal" class="card" style="width: 25rem">
+    <div class="card-body">
+      <h5 class="card-title mb-3">Info</h5>
+      <h6 class="card-subtitle mb-3 text-body-secondary">
+        Die Shopping-List-App ist noch nicht vollständig implementiert!
+      </h6>
+      <p>Folgende Punkte werden demnächst umgesetzt:</p>
+      <ol>
+        <li>Download und Share Icons sind noch inaktiv</li>
+        <li>Mehrere Designs zur Auswahl machen</li>
+        <li>Das Bearbeiten in der Liste ermöglichen</li>
+      </ol>
+      <button
+        class="btn btn-secondary btn-sm mt-3"
+        id="close-modal-btn"
+        (click)="closeModal()">
+        Schließen
+      </button>
+    </div>
+  </div>
+  <!-- Modal -->
 </div>
-<!--Modal test-->

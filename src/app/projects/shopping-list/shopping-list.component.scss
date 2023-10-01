@@ -1,5 +1,11 @@
 .container {
   width: 620px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card {
+  width: 620px;
   height: 605px;
   margin-top: 100px;
   border-radius: 15px;
@@ -9,11 +15,10 @@
   transition: 0.5s;
 }
 
-.container-blur {
+.main-card-blur {
   width: 620px;
   height: 605px;
   margin-top: 100px;
-  margin-left: 245px;
   border-radius: 15px;
   background-image: url("/assets/img/shoppinglist.png");
   background-repeat: no-repeat;
@@ -22,48 +27,43 @@
   filter: blur(10px);
 }
 
-.container:hover {
+.main-card:hover {
   transform: scale(1.05);
 }
 
-.input-card {
-  height: 55px;
-  padding-top: 80px;
-  margin-left: 110px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.list-box {
+  margin-top: 30px;
+  margin-left: 115px;
 }
 
-.output-card {
-  margin-top: 25px;
-  margin-left: 100px;
-  max-height: 200px;
-  padding: 10px;
-  border-radius: unset;
+#input-row {
+  margin-bottom: 30px;
+}
+
+#output-row {
+  max-height: 190px;
+  margin-right: 10px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
-.output-card::-webkit-scrollbar {
+#output-row::-webkit-scrollbar {
   width: 10px;
 }
 
-.output-card::-webkit-scrollbar-button {
+#output-row::-webkit-scrollbar-button {
   color: #59702f;
 }
 
-.output-card::-webkit-scrollbar-track {
+#output-row::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-.output-card::-webkit-scrollbar-thumb {
+#output-row::-webkit-scrollbar-thumb {
   background: #c9e265;
 }
 
-.output-card::-webkit-scrollbar-thumb:hover {
+#output-row::-webkit-scrollbar-thumb:hover {
   background: #59702f;
 }
 
@@ -163,12 +163,9 @@ ul {
   color: red;
 }
 
-.icon-card {
+#icon-row {
   max-height: 35px;
-  padding: 10px;
-  margin-top: 25px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +195,7 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.btn-container {
+.btn-row {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -221,9 +218,10 @@ ul {
 
 #modal {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   border: 5px solid grey;
   border-radius: 15px;
-  left: 350px;
   bottom: 500px;
   transition: 0.5s;
 }
@@ -232,10 +230,10 @@ ul {
   transform: scale(1.05);
 }
 
-#modal h5 {
+h5 {
   color: #59702f;
 }
 
-#close-modal {
+#close-modal-btn {
   margin-left: 135px;
 }
