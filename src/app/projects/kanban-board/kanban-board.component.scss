@@ -1,5 +1,11 @@
 .container {
-  max-width: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: fit-content;
   margin-top: 110px;
   border-radius: 15px;
   background-image: url("/assets/img/kb-bg.png");
@@ -8,12 +14,12 @@
   transition: 0.5s;
 }
 
-.container:hover {
+.card:hover {
   transform: scale(1.05);
 }
 
 @media only screen and (max-width: 768px) {
-  .container {
+  .card {
     margin-top: 25%;
   }
 }
@@ -170,6 +176,7 @@ h4 {
 .add-column {
   color: whitesmoke;
   margin-left: 5px;
+  margin-right: 5px;
   position: relative;
   top: 35px;
   margin-top: 80px;
@@ -194,5 +201,7 @@ h4 {
 #sl-btn,
 #qa-btn {
   margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
