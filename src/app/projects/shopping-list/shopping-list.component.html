@@ -7,7 +7,7 @@
     <h1 class="">SHOPPING</h1>
     <h3 class="" id="h3-list">LIST</h3>
 
-    <div class="list-box">
+    <div class="list-container">
       <div class="row" id="input-row">
         <div class="col-5">
           <input
@@ -20,7 +20,7 @@
             placeholder="Artikel" />
         </div>
 
-        <div class="col-2">
+        <div class="col-2" id="amount-input-col">
           <input
             [(ngModel)]="newItemQuantity"
             type="number"
