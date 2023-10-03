@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .card {
@@ -28,6 +29,7 @@ h1 {
   padding-top: 35px;
   text-align: center;
   color: whitesmoke;
+  font-family: cursive;
 }
 
 h4 {
@@ -42,6 +44,7 @@ h4 {
 #edit-title {
   margin-top: 5px;
   margin-left: 5px;
+  opacity: 50%;
 }
 
 #edit-title:hover {
@@ -52,6 +55,7 @@ h4 {
 #delete-column {
   margin-top: 5px;
   margin-right: -5px;
+  opacity: 50%;
 }
 
 #delete-column:hover {
@@ -62,14 +66,15 @@ h4 {
 .board {
   display: flex;
   width: 100%;
-  padding-left: 5px;
+  padding-left: 15px;
+  padding-right: 10px;
   align-items: baseline;
   justify-content: center;
 }
 
 .column {
-  max-width: 305px;
-  min-width: 305px;
+  max-width: 310px;
+  min-width: 310px;
   padding: 15px;
   margin-bottom: 35px;
   margin-left: 10px;
@@ -90,21 +95,12 @@ h4 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  background-color: white;
 }
 
 .task-card > span:focus {
   outline: none;
 }
-
-//.icon:hover + .task-card {
-//  border: 1px solid orange;
-//  box-shadow: none;
-//}
-//
-//#move-r:hover + .task-card {
-//  border: 1px solid orange;
-//  box-shadow: none;
-//}
 
 .textarea {
   width: 190px;
@@ -177,6 +173,7 @@ h4 {
   color: whitesmoke;
   margin-left: 5px;
   margin-right: 5px;
+  padding-left: 5px;
   position: relative;
   top: 35px;
   margin-top: 80px;
@@ -184,6 +181,19 @@ h4 {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  animation: pulse 1.5s ease-in-out infinite forwards;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .add-column:hover {
