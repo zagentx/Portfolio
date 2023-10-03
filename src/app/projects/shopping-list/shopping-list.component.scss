@@ -55,7 +55,9 @@ h1 {
 h3 {
   color: #59702f;
   text-align: center;
-  margin-right: 100px;
+  width: 285px;
+  position: relative;
+  left: 12%;
 }
 
 ul {
@@ -95,7 +97,7 @@ ul {
 }
 
 #bag-plus {
-  color: #c9e265;
+  color: #59702f;
   margin-left: 10px;
   animation: pulse 1.5s ease-in-out infinite forwards;
 }
@@ -111,9 +113,14 @@ ul {
 
 #output-row {
   max-height: 190px;
+  min-height: 120px;
   margin-right: 10px;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+ul {
+  min-height: 31.2px;
 }
 
 #output-row::-webkit-scrollbar {
@@ -160,11 +167,23 @@ ul {
 
 #pencil {
   margin-left: 10px;
+  color: #59702f;
+  opacity: 0.5;
+}
+
+#pencil:hover {
   color: dodgerblue;
+  opacity: 1;
 }
 
 #bag-dash {
+  color: #59702f;
+  opacity: 0.5;
+}
+
+#bag-dash:hover {
   color: red;
+  opacity: 1;
 }
 
 #icon-row {
@@ -173,6 +192,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #59702f;
 }
 
 #info {
@@ -191,6 +211,10 @@ ul {
   100% {
     opacity: 1;
   }
+}
+
+#icon-row {
+  margin-top: 130px;
 }
 
 #kb-btn,
@@ -219,6 +243,14 @@ ul {
     -webkit-transform: scale(3.2, 3.2);
     opacity: 0;
   }
+}
+
+#trash {
+  color: #59702f;
+}
+
+#trash:hover {
+  color: red;
 }
 
 #modal {
