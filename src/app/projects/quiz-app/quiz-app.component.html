@@ -12,9 +12,7 @@
     <div class="card-body">
       <h5 class="fw-light">
         Punktestand:
-        <b [ngStyle]="{ color: score > 0 ? 'green' : 'red' }">{{
-          score
-        }}</b>
+        <b [ngStyle]="{ color: score > 0 ? 'green' : 'red' }">{{ score }}</b>
       </h5>
 
       <div *ngIf="currentQuestionIndex < questions.length">
@@ -41,10 +39,12 @@
           {{ option }}
         </div>
 
-        <button class="btn btn-warning mt-3" [disabled]="!userAnswer" (click)="checkAnswer(userAnswer)">
+        <button
+          class="btn btn-warning mt-3"
+          [disabled]="!userAnswer"
+          (click)="checkAnswer(userAnswer)">
           Antwort einreichen
         </button>
-
       </div>
 
       <div *ngIf="currentQuestionIndex >= questions.length">
