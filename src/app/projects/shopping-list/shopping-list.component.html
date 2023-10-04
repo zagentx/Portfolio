@@ -7,7 +7,7 @@
     <h1 class="">SHOPPING</h1>
     <h3 class="" id="h3-list">LIST</h3>
 
-    <div class="list-box">
+    <div class="list-container">
       <div class="row" id="input-row">
         <div class="col-5">
           <input
@@ -20,7 +20,7 @@
             placeholder="Artikel" />
         </div>
 
-        <div class="col-2">
+        <div class="col-2" id="amount-input-col">
           <input
             [(ngModel)]="newItemQuantity"
             type="number"
@@ -50,7 +50,7 @@
 
         <div class="col-2">
           <ul id="amount-output">
-            <li *ngFor="let item of items; let i = index">
+            <li *ngFor="let item of items">
               {{ item.quantity > 0 ? item.quantity : "-" }}
             </li>
           </ul>
@@ -79,7 +79,7 @@
     <div class="row text-center" id="icon-row">
       <div class="col">
         <i
-          class="bi bi-trash3 px-3"
+          class="bi bi-trash3 px-3" id="trash"
           style="font-size: 1.3rem"
           (click)="clearShoppingList()"></i>
         <i class="bi bi-download" id="download" style="font-size: 1.3rem"></i>
