@@ -12,12 +12,12 @@
   margin-top: 140px;
   padding-right: 15px;
   padding-left: 15px;
-
   border-radius: 40px;
   background-color: #23272e;
   background-repeat: no-repeat;
   background-size: cover;
-}
+  transition: 0.5s;
+  }
 
 .card:hover {
   transform: scale(1.05);
