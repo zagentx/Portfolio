@@ -335,3 +335,11 @@ ul {
 #close-modal-btn {
   margin-left: 135px;
 }
+
+@media only screen and (max-width: 768px) {
+  #modal {
+    width: 45px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
