@@ -1,13 +1,13 @@
 <div class="container">
+
   <div
     [class.main-card]="!isBlurred"
     [class.main-card-blur]="isBlurred"
-    class="card"
-    id="main-card">
-    <h1 class="">SHOPPING</h1>
-    <h3 class="" id="h3-list">LIST</h3>
+    class="main-card">
+    <h1>SHOPPING</h1>
+    <h3 class="h3">LIST</h3>
 
-    <div class="list-container">
+    <div class="list-box">
       <div class="row" id="input-row">
         <div class="col-5">
           <input
@@ -56,7 +56,7 @@
           </ul>
         </div>
 
-        <div class="col-3">
+        <div class="col-3" id="pencil-dash">
           <ul>
             <li *ngFor="let item of items; let i = index">
               <i
@@ -107,7 +107,7 @@
   </div>
 
   <!-- Modal -->
-  <div *ngIf="isModalOpen" id="modal" class="card" style="width: 25rem">
+  <div *ngIf="isModalOpen" class="card" id="modal" style="width: 25rem">
     <div class="card-body">
       <h5 class="card-title mb-3">Info</h5>
       <h6 class="card-subtitle mb-3 text-body-secondary">
