@@ -1,6 +1,16 @@
 <div class="container">
 
-  <div class="card">
+  <div
+    class="main-card"
+    [class.main-card]="!isBlurred"
+    [class.main-card-blur]="isBlurred">
+
+    <i
+      class="bi bi-info-circle"
+      id="info"
+      (click)="openModal(); blurreContaner()">
+    </i>
+
     <h1 class="fw-light">Kanban-Board</h1>
 
     <div class="board">
@@ -104,4 +114,27 @@
       Quiz-App
     </button>
   </div>
+
+  <!-- Modal -->
+  <div *ngIf="isModalOpen" class="card" id="modal" style="width: 25rem">
+    <div class="card-body">
+      <h5 class="card-title mb-3">Info</h5>
+      <h6 class="card-subtitle mb-3 text-body-secondary">
+        Das Kanban-Board ist noch nicht vollständig implementiert!
+      </h6>
+      <p>Folgende Punkte werden demnächst umgesetzt:</p>
+      <ol>
+        <li>Drag & Drop Funktionalität</li>
+        <li>Das Editieren des Titels ist nicht optimal</li>
+        <li>Überarbeitung der Icons</li>
+      </ol>
+      <button
+        class="btn btn-secondary btn-sm mt-3"
+        id="close-modal-btn"
+        (click)="closeModal()">
+        Schließen
+      </button>
+    </div>
+  </div>
+  <!-- Modal -->
 </div>

@@ -9,6 +9,9 @@ export class KanbanBoardComponent implements OnInit {
   isEditable = false;
   isTitleEditable = -1;
 
+  isModalOpen = false;
+  isBlurred = false;
+
   columns = [
     {
       title: 'To Do',
@@ -77,5 +80,18 @@ export class KanbanBoardComponent implements OnInit {
   deleteColumn(index: number) {
     this.columns.splice(index, 1);
     this.saveTasks();
+  }
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+    this.isBlurred = false;
+  }
+
+  blurreContaner() {
+    this.isBlurred = !this.isBlurred;
   }
 }
