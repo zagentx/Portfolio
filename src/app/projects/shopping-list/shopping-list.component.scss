@@ -44,18 +44,16 @@
     border-radius: 20px;
     transform: none !important;
   }
+
+  .list-box {
+    margin-left: 10px !important;
+    transform: none !important;
+  }
 }
 
 .list-box {
   margin-top: 30px;
   margin-left: 115px;
-}
-
-@media only screen and (max-width: 768px) {
-  .list-box {
-    margin-left: 10px;
-    transform: none !important;
-  }
 }
 
 h1 {
@@ -339,7 +337,7 @@ ul {
 
 @media only screen and (max-width: 768px) {
   #modal {
-    width: 45px;
+    width: 23rem !important;
     margin-right: 5px;
     margin-left: 5px;
   }
