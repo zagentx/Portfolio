@@ -5,17 +5,17 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent {
-  isModalVisible = true;
+  isOpen = true;
 
   constructor() {}
 
   NgOnInit() {}
 
   openModal() {
-    this.isModalVisible = true;
+    this.isOpen = true;
   }
 
   closeModal() {
-    this.isModalVisible = false;
+    this.isOpen = false;
   }
 }
