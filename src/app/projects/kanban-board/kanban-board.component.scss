@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.card {
+.main-card {
   width: fit-content;
   margin-top: 110px;
   border-radius: 15px;
@@ -15,12 +15,24 @@
   transition: 0.5s;
 }
 
-.card:hover {
+.main-card-blur {
+  width: fit-content;
+  margin-top: 110px;
+  border-radius: 15px;
+  background-image: url("/assets/img/kbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  filter: blur(10px);
+
+}
+
+.main-card:hover {
   transform: scale(1.05);
 }
 
 @media only screen and (max-width: 768px) {
-  .card {
+  .main-card {
     width: 100%;
     margin-top: 80px;
     min-height: 260px;
@@ -242,4 +254,45 @@ h4 {
   margin-top: 10px;
   margin-bottom: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#info {
+  position: relative;
+  left: 15px;
+  top: 8px;
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
+
+#modal {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white !important;
+  border: 5px solid grey;
+  border-radius: 15px;
+  bottom: 460px;
+  transition: 0.5s;
+}
+
+#modal:hover {
+  transform: scale(1.05);
+}
+
+#modal h5 {
+  color: orange;
+}
+
+#close-modal-btn {
+  margin-left: 135px;
+}
+
+@media only screen and (max-width: 768px) {
+  #modal {
+    position: relative;
+    bottom: 580px !important;
+    width: 23rem !important;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
