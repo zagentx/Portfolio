@@ -5,18 +5,18 @@
 
 @import "bootstrap/scss/bootstrap";
 
+body {
+  background-image: url("assets/img/mybg.png");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+}
+
 //body {
-//  background-image: url("assets/img/bg1.png");
+//  background-image: url("assets/img/bg3.jpg");
 //  background-repeat: no-repeat;
 //  background-size: cover;
+//  background-position: center;
 //}
-
-body {
-  background-image: url("assets/img/bg3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 //body {
 //  background-image: url("assets/img/bg2.jpg");
