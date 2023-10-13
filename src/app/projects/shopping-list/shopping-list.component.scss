@@ -31,16 +31,6 @@
   filter: blur(10px);
 }
 
-.main-card-blur-res {
-  width: 365px;
-  margin-top: 100px;
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 20px;
-  transform: none !important;
-  filter: blur(10px);
-}
-
 .main-card:hover {
   transform: scale(1.05);
 }
@@ -58,6 +48,17 @@
     padding-left: 5px;
     border-radius: 20px;
     transform: none !important;
+  }
+
+  .main-card-blur-res {
+    width: 345px;
+    margin-top: 75px !important;
+    height: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 20px;
+    transform: none !important;
+    filter: blur(10px);
   }
 
   .list-box {
@@ -103,7 +104,6 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 ul {
   list-style-type: none;
@@ -336,7 +336,7 @@ ul {
   margin-right: auto;
   border: 5px solid grey;
   border-radius: 15px;
-  bottom: 550px;
+  bottom: 565px;
   transition: 0.5s;
 }
 
@@ -354,6 +354,8 @@ ul {
 
 @media only screen and (max-width: 768px) {
   #modal {
+    position: relative;
+    bottom: 560px;
     width: 22rem !important;
     margin-right: 5px;
     margin-left: 5px;
