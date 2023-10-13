@@ -1,68 +1,70 @@
 <div class="container">
-  <div class="h1">
-    <div class="text-center">
-      <h1 class="fw-light pt-5">Projekte</h1>
-      <p class="lead text-muted" id="overview">
-        Eine aktuelle Übersicht meiner Projekte
-      </p>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col">
-      <div class="card" (click)="onCardClickSl()">
-        <div class="card-body">
-          <img
-            src="../../../assets/img/shopping.jpg"
-            class="card-img-top"
-            alt="..." />
-          <h5 class="card-title py-3">Einkaufliste</h5>
-          <p class="card-text">Erstelle deine Einkaufsliste.</p>
-          <a routerLink="/shopping-list" class="btn btn-outline-secondary">
-            View
-          </a>
+    <div class="h1">
+      <div class="text-center">
+        <h1 class="pt-5">Projekte</h1>
+        <p class="lead text-muted" id="overview">
+          Eine aktuelle Übersicht meiner Projekte
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card" (click)="onCardClickSl()">
+          <div class="card-body">
+            <img
+              src="../../../assets/img/shopping.jpg"
+              class="card-img-top"
+              alt="..." />
+            <h5 class="card-title py-3">Einkaufliste</h5>
+            <p class="card-text">Erstelle deine Einkaufsliste.</p>
+            <a routerLink="/shopping-list" class="btn btn-outline-secondary">
+              View
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col">
-      <div class="card" (click)="onCardClickKb()">
-        <div class="card-body">
-          <img
-            src="../../../assets/img/kanban.jpg"
-            class="card-img-top"
-            alt="..." />
-          <h5 class="card-title py-3">Kanban-Board</h5>
-          <p class="card-text">Behalte den Überblick bei deinem Projekt.</p>
-          <a routerLink="/kanban-board" class="btn btn-outline-secondary">
-            View
-          </a>
+    <div class="row">
+      <div class="col">
+        <div class="card" (click)="onCardClickKb()">
+          <div class="card-body">
+            <img
+              src="../../../assets/img/kanban.jpg"
+              class="card-img-top"
+              alt="..." />
+            <h5 class="card-title py-3">Kanban-Board</h5>
+            <p class="card-text">Behalte den Überblick bei deinem Projekt.</p>
+            <a routerLink="/kanban-board" class="btn btn-outline-secondary">
+              View
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col">
-      <div class="card" (click)="onCardClickQa()">
-        <div class="card-body">
-          <img
-            src="../../../assets/img/quiz.png"
-            class="card-img-top"
-            alt="..." />
-          <h5 class="card-title py-3">Quiz-App</h5>
-          <p class="card-text">
-            Teste dein Wissen zu unterschiedlichen Themen.
-          </p>
-          <a routerLink="/quiz-app" class="btn btn-outline-secondary">View</a>
+    <div class="row">
+      <div class="col">
+        <div class="card" (click)="onCardClickQa()">
+          <div class="card-body">
+            <img
+              src="../../../assets/img/quiz.png"
+              class="card-img-top"
+              alt="..." />
+            <h5 class="card-title py-3">Quiz-App</h5>
+            <p class="card-text">
+              Teste dein Wissen zu unterschiedlichen Themen.
+            </p>
+            <a routerLink="/quiz-app" class="btn btn-outline-secondary">View</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+</div>
 
   <button class="btn btn-outline-light" id="contact-btn" routerLink="/contact">
     Jetzt Kontakt aufnehmen
   </button>
-</div>

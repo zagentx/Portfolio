@@ -5,17 +5,22 @@
 }
 
 .h1 {
-  background-color: white;
-  border-radius: 15px;
-  width: 350px;
+  color: white;
+  font-weight: bold;
   display: inline-block;
 }
 
+#overview {
+  color: white !important;
+  font-weight: bold;
+}
+
 .card {
-  width: 100%;
+  width: 90%;
   top: 5%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10%;
-  border: 5px solid black;
   border-radius: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
@@ -50,8 +55,12 @@ a {
 }
 
 #contact-btn {
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: auto;
-  //margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 15px;
 }
+
