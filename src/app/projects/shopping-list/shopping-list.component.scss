@@ -1,5 +1,5 @@
 .container {
-  min-width: 100%;
+  width: 600px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
 }
 
 .main-card {
-  max-width: 620px;
+  width: 600px;
   height: 605px;
   margin-top: 100px;
   border-radius: 15px;
@@ -19,7 +19,7 @@
 }
 
 .main-card-blur {
-  width: 620px;
+  width: 600px;
   height: 605px;
   margin-top: 100px;
   border-radius: 15px;
@@ -46,8 +46,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
   .main-card {
-    width: 365px;
+    width: 345px;
     margin-top: 100px;
     padding-right: 5px;
     padding-left: 5px;
@@ -56,12 +60,15 @@
   }
 
   .list-box {
-    margin-left: 10px !important;
+    width: 347px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     transform: none !important;
   }
 }
 
 .list-box {
+  width: 440px;
   margin-top: 30px;
   margin-left: 115px;
 }
@@ -74,16 +81,8 @@ h1 {
   font-family: cursive;
 }
 
-.h3 {
-  color: whitesmoke;
-  font-weight: bold;
-  text-align: center;
-  margin-left: 90px;
-  background-color: #59702f;
-}
-
 @media only screen and (max-width: 768px) {
-  .h3 {
+  h3 {
     width: 180px;
     position: inherit;
     right: 50px;
@@ -91,12 +90,14 @@ h1 {
 }
 
 h3 {
-  color: #59702f;
+  width: 300px;
+  color: whitesmoke;
+  background-color: #59702f;
   text-align: center;
-  width: 285px;
-  position: relative;
-  left: 12%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 ul {
   list-style-type: none;
@@ -347,7 +348,7 @@ ul {
 
 @media only screen and (max-width: 768px) {
   #modal {
-    width: 23rem !important;
+    width: 22rem !important;
     margin-right: 5px;
     margin-left: 5px;
   }
