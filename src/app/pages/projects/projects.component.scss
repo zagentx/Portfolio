@@ -21,6 +21,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10%;
+  background-color: whitesmoke;
   border-radius: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
@@ -36,7 +37,9 @@
   }
 
   h1 {
+    width: 500px;
     color: whitesmoke;
+    background-color: #d9d9d9;
     font-weight: bold !important;
   }
 
@@ -46,8 +49,8 @@
 }
 
 img {
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
 
 a {
