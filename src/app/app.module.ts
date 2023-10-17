@@ -20,6 +20,7 @@ import { KanbanBoardComponent } from './projects/kanban-board/kanban-board.compo
 import { AutosizeModule } from 'ngx-autosize';
 import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { AuthComponent } from './pages/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ModalComponent } from './components/modal/modal.component';
     KanbanBoardComponent,
     QuizAppComponent,
     ModalComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,

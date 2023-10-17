@@ -9,9 +9,11 @@ import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component'
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
 import { KanbanBoardComponent } from './projects/kanban-board/kanban-board.component';
 import { QuizAppComponent } from './projects/quiz-app/quiz-app.component';
+import {AuthComponent} from "./pages/auth/auth.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'auth', component: AuthComponent },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
