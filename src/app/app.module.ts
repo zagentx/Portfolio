@@ -13,7 +13,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatenschutzComponent } from './pages/datenschutz/datenschutz.component';
 import { ShoppingListComponent } from './projects/shopping-list/shopping-list.component';
 import { KanbanBoardComponent } from './projects/kanban-board/kanban-board.component';
@@ -48,6 +48,7 @@ import { AuthComponent } from './pages/auth/auth.component';
     NgbModule,
     FormsModule,
     AutosizeModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
