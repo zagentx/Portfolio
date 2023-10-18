@@ -15,8 +15,7 @@ export class ContactComponent implements OnInit {
   });
 
   onSubmit() {
-    // TODO: Use EventEmitter with form value
-    console.warn(this.contactForm.value);
+    console.log(this.contactForm.value);
   }
   constructor() {}
 

@@ -50,8 +50,13 @@
         </div>
       </div>
 
-      <button type="submit" class="btn btn-outline-light w-100 mt-3">Absenden</button>
+      <button
+        type="submit"
+        class="btn btn-outline-light w-100 mt-3"
+        [disabled]="!contactForm.valid">
+        Absenden
+      </button>
+
     </form>
   </div>
 </div>
-
