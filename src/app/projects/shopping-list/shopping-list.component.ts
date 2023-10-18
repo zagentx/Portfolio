@@ -102,7 +102,7 @@ export class ShoppingListComponent implements OnInit {
     this.isBlurred = false;
   }
 
-  blurreContaner() {
+  blurContainer() {
     this.isBlurred = !this.isBlurred;
   }
 }
